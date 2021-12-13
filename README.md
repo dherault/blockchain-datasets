@@ -2,7 +2,7 @@
 
 Any token, any blockchain, any dex.
 
-Will grow some more
+Will grow some more hopefully.
 
 ## Contributing
 
