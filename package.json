@@ -1,0 +1,41 @@
+{
+  "name": "ultimate-token-list",
+  "version": "1.0.0",
+  "description": "Any token, any blockchain, any dex.",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm-git install",
+    "dev": "nodemon -e .js --exec \"npm run build\"",
+    "build": "ts-node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dherault/ultimate-token-list.git"
+  },
+  "keywords": [
+    "token",
+    "blockchain",
+    "dex",
+    "ERC20"
+  ],
+  "author": "David Hérault <dherault@gmail.com> (https://github.com/dherault)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dherault/ultimate-token-list/issues"
+  },
+  "homepage": "https://github.com/dherault/ultimate-token-list#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-dherault": "^1.6.0",
+    "git-clone": "^0.2.0",
+    "nodemon": "^2.0.15",
+    "tmp-promise": "^3.0.3",
+    "ts-file-parser": "^0.0.21",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "typescript-parser": "^2.6.1"
+  }
+}
