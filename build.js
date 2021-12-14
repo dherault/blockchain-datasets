@@ -30,10 +30,7 @@ async function build() {
       },
     },
   }
-  const dexIdToChainIdToContractNameToContractInfo = {
-    sushiswap: {},
-    fatex: {},
-  }
+  const dexIdToChainIdToContractNameToContractInfo = {}
   const chainIdToDexIdToContractNameToContractInfo = {}
 
   /* ---
@@ -60,7 +57,16 @@ async function build() {
 
   await clone(dexIdToInfo.sushiswap.contractsRepositoryGitUrl, tmpDir.path)
 
+  const defaultContractNameToContractInfo = {
+    pair: {
+      address: 'depends on the pair',
+      abi: require('./inputs/UniswapV2Pair.abi.json'),
+    },
+  }
+
   const smartContractsDeploymentsLocation = path.join(tmpDir.path, 'deployments')
+
+  dexIdToChainIdToContractNameToContractInfo.sushiswap = {}
 
   fs.readdirSync(smartContractsDeploymentsLocation)
   .forEach(folder => {
@@ -71,7 +77,11 @@ async function build() {
         chainIdToDexIdToContractNameToContractInfo[chainId] = {}
       }
 
-      chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap = {}
+      chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap = defaultContractNameToContractInfo
+
+      if (!dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId]) {
+        dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId] = defaultContractNameToContractInfo
+      }
 
       fs.readdirSync(path.join(smartContractsDeploymentsLocation, folder))
       .filter(file => file.endsWith('.json'))
@@ -86,10 +96,6 @@ async function build() {
         }
 
         const contractName = file.replace('.json', '')
-
-        if (!dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId]) {
-          dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId] = {}
-        }
 
         dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId][contractName] = {
           address: json.address,
