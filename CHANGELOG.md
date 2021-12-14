@@ -1,5 +1,9 @@
 # Changelog
 
+## v4.1.0
+
+- Add `blockchainIdToDexIds.json`
+
 ## v4.0.0
 
 - Add per-dex folder under `dexes`

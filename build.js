@@ -5,7 +5,6 @@ const del = require('del')
 const tmp = require('tmp-promise')
 const clone = require('git-clone/promise')
 const axios = require('axios')
-const { ObjectFlags } = require('typescript')
 
 const aliases = {
   bsc: ['bsc_mainnet'],
@@ -31,6 +30,7 @@ async function build() {
       },
     },
   }
+  const blockchainIdToDexIds = {}
   const dexIdToChainIdToContractNameToContractInfo = {}
   const chainIdToDexIdToContractNameToContractInfo = {}
 
@@ -73,6 +73,12 @@ async function build() {
   .forEach(folder => {
     if (fs.lstatSync(path.join(smartContractsDeploymentsLocation, folder)).isDirectory()) {
       const chainId = fs.readFileSync(path.join(smartContractsDeploymentsLocation, folder, '.chainId'), 'utf8')
+
+      if (!blockchainIdToDexIds[chainId]) {
+        blockchainIdToDexIds[chainId] = []
+      }
+
+      blockchainIdToDexIds[chainId].push('sushiswap')
 
       if (!chainIdToDexIdToContractNameToContractInfo[chainId]) {
         chainIdToDexIdToContractNameToContractInfo[chainId] = {}
@@ -207,6 +213,7 @@ async function build() {
 
   saveJson(getBuildLocation('allChains.json'), allChains)
   saveJson(getBuildLocation('dexIdToInfo.json'), dexIdToInfo)
+  saveJson(getBuildLocation('blockchainIdToDexIds.json'), blockchainIdToDexIds)
 
   Object.entries(dexIdToChainIdToContractNameToContractInfo).forEach(([dexId, chainIdToContractNameToContractInfo]) => {
     Object.entries(chainIdToContractNameToContractInfo).forEach(([chainId, contractNameToContractInfo]) => {

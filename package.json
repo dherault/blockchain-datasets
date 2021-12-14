@@ -1,12 +1,12 @@
 {
   "name": "ultimate-token-list",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Any token, any blockchain, any dex.",
   "main": "build/blockchainIdToTokens.json",
   "scripts": {
     "dev": "nodemon -e .js --exec \"npm run build\"",
     "build": "ts-node build.js",
-    "prepublish": "npm build",
+    "prepublishOnly": "npm build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
