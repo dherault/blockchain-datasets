@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.1
+
+- Add sushiswap `dexIdToInfo.sushiswap.contractTypeToContractName`
+
 ## v3.1.0
 
 - Add `chainIdToDexIdToContractNameToContractInfo.json`

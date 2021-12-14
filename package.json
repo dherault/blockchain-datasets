@@ -1,6 +1,6 @@
 {
   "name": "ultimate-token-list",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Any token, any blockchain, any dex.",
   "main": "build/blockchainIdToTokens.json",
   "scripts": {

@@ -23,6 +23,10 @@ async function build() {
       url: 'https://sushi.com',
       contractsRepositoryUrl: 'https://github.com/sushiswap/sushiswap',
       contractsRepositoryGitUrl: 'git@github.com:sushiswap/sushiswap.git',
+      contractTypeToContractName: {
+        factory: 'UniswapV2Factory',
+        router: 'UniswapV2Router02',
+      },
     },
   }
   const dexIdToChainIdToContractNameToContractInfo = {
