@@ -16,7 +16,6 @@ const aliases = {
 async function build() {
   await del(getBuildLocation('*'))
 
-  const blockchainIdToTokens = {}
   const dexIdToInfo = {
     sushiswap: {
       name: 'SushiSwap',
@@ -30,9 +29,10 @@ async function build() {
       },
     },
   }
-  const blockchainIdToDexIds = {}
+  const blockchainIdToTokens = {}
+  const chainNameToChainId = {}
   const dexIdToChainIdToContractNameToContractInfo = {}
-  const chainIdToDexIdToContractNameToContractInfo = {}
+  const blockchainIdToDexIds = {}
 
   /* ---
     https://chainid.network/chains.json
@@ -40,12 +40,10 @@ async function build() {
 
   console.log('Parsing https://chainid.network/chains.json')
 
-  const allChains = (await axios.get('https://chainid.network/chains.json')).data
+  const chainInfos = (await axios.get('https://chainid.network/chains.json')).data
 
-  const chainNameToChainId = {}
-
-  allChains.forEach(({ chainId, network }) => {
-    chainNameToChainId[network.toLowerCase()] = chainId
+  chainInfos.forEach(chainInfo => {
+    chainNameToChainId[chainInfo.network.toLowerCase()] = chainInfo.chainId
   })
 
   /* ---
@@ -80,12 +78,6 @@ async function build() {
 
       blockchainIdToDexIds[chainId].push('sushiswap')
 
-      if (!chainIdToDexIdToContractNameToContractInfo[chainId]) {
-        chainIdToDexIdToContractNameToContractInfo[chainId] = {}
-      }
-
-      chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap = defaultContractNameToContractInfo
-
       if (!dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId]) {
         dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId] = defaultContractNameToContractInfo
       }
@@ -105,11 +97,6 @@ async function build() {
         const contractName = file.replace('.json', '')
 
         dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId][contractName] = {
-          address: json.address,
-          abi: json.abi,
-        }
-
-        chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap[contractName] = {
           address: json.address,
           abi: json.abi,
         }
@@ -208,12 +195,21 @@ async function build() {
   // })
 
   /* ---
+    post-processing
+  --- */
+
+  const chainIdToChainMetadata = {}
+
+  chainInfos.forEach(chainInfo => {
+    chainIdToChainMetadata[chainInfo.chainId] = chainInfo
+    chainIdToChainMetadata[chainInfo.chainId].dexes = blockchainIdToDexIds[chainInfo.chainId] || []
+  })
+
+  /* ---
     save
   --- */
 
-  saveJson(getBuildLocation('allChains.json'), allChains)
-  saveJson(getBuildLocation('dexIdToInfo.json'), dexIdToInfo)
-  saveJson(getBuildLocation('blockchainIdToDexIds.json'), blockchainIdToDexIds)
+  saveJson(getBuildLocation('chainIdToChainMetadata.json'), chainIdToChainMetadata)
 
   Object.entries(dexIdToChainIdToContractNameToContractInfo).forEach(([dexId, chainIdToContractNameToContractInfo]) => {
     Object.entries(chainIdToContractNameToContractInfo).forEach(([chainId, contractNameToContractInfo]) => {

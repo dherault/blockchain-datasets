@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.0.0
+
+- Remove `allChains.json`
+- Add `chainIdToChainMetadata.json`
+
 ## v4.1.0
 
 - Add `blockchainIdToDexIds.json`

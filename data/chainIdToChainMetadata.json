@@ -1,5 +1,5 @@
-[
-  {
+{
+  "1": {
     "name": "Ethereum Mainnet",
     "chain": "ETH",
     "network": "mainnet",
@@ -30,9 +30,12 @@
         "url": "https://etherscan.io",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "2": {
     "name": "Expanse Network",
     "chain": "EXP",
     "network": "mainnet",
@@ -49,9 +52,10 @@
     "shortName": "exp",
     "chainId": 2,
     "networkId": 1,
-    "slip44": 40
+    "slip44": 40,
+    "dexes": []
   },
-  {
+  "3": {
     "name": "Ethereum Testnet Ropsten",
     "chain": "ETH",
     "network": "ropsten",
@@ -73,9 +77,12 @@
     "networkId": 3,
     "ens": {
       "registry": "0x112234455c3a32fd11230c42e7bccd4a84e02010"
-    }
+    },
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "4": {
     "name": "Ethereum Testnet Rinkeby",
     "chain": "ETH",
     "network": "rinkeby",
@@ -104,9 +111,12 @@
         "url": "https://rinkeby.etherscan.io",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "5": {
     "name": "Ethereum Testnet Görli",
     "chain": "ETH",
     "network": "goerli",
@@ -137,9 +147,12 @@
         "url": "https://goerli.etherscan.io",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "6": {
     "name": "Ethereum Classic Testnet Kotti",
     "chain": "ETC",
     "network": "kotti",
@@ -153,9 +166,10 @@
     "infoURL": "https://explorer.jade.builders/?network=kotti",
     "shortName": "kot",
     "chainId": 6,
-    "networkId": 6
+    "networkId": 6,
+    "dexes": []
   },
-  {
+  "7": {
     "name": "ThaiChain",
     "chain": "TCH",
     "network": "mainnet",
@@ -171,9 +185,10 @@
     "infoURL": "https://thaichain.io",
     "shortName": "tch",
     "chainId": 7,
-    "networkId": 7
+    "networkId": 7,
+    "dexes": []
   },
-  {
+  "8": {
     "name": "Ubiq",
     "chain": "UBQ",
     "network": "mainnet",
@@ -198,9 +213,10 @@
         "url": "https://ubiqscan.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "9": {
     "name": "Ubiq Network Testnet",
     "chain": "UBQ",
     "network": "mainnet",
@@ -214,9 +230,10 @@
     "infoURL": "https://ethersocial.org",
     "shortName": "tubq",
     "chainId": 9,
-    "networkId": 2
+    "networkId": 2,
+    "dexes": []
   },
-  {
+  "10": {
     "name": "Optimistic Ethereum",
     "chain": "ETH",
     "network": "mainnet",
@@ -239,9 +256,10 @@
         "url": "https://optimistic.etherscan.io",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "11": {
     "name": "Metadium Mainnet",
     "chain": "META",
     "network": "mainnet",
@@ -258,9 +276,10 @@
     "shortName": "meta",
     "chainId": 11,
     "networkId": 11,
-    "slip44": 916
+    "slip44": 916,
+    "dexes": []
   },
-  {
+  "12": {
     "name": "Metadium Testnet",
     "chain": "META",
     "network": "testnet",
@@ -276,9 +295,10 @@
     "infoURL": "https://metadium.com",
     "shortName": "kal",
     "chainId": 12,
-    "networkId": 12
+    "networkId": 12,
+    "dexes": []
   },
-  {
+  "13": {
     "name": "Diode Testnet Staging",
     "chain": "DIODE",
     "network": "testnet",
@@ -295,9 +315,10 @@
     "infoURL": "https://diode.io/staging",
     "shortName": "dstg",
     "chainId": 13,
-    "networkId": 13
+    "networkId": 13,
+    "dexes": []
   },
-  {
+  "14": {
     "name": "Flare Mainnet",
     "chain": "FLR",
     "network": "flare",
@@ -311,9 +332,10 @@
     "infoURL": "https://flare.xyz",
     "shortName": "flr",
     "chainId": 14,
-    "networkId": 14
+    "networkId": 14,
+    "dexes": []
   },
-  {
+  "15": {
     "name": "Diode Prenet",
     "chain": "DIODE",
     "network": "mainnet",
@@ -330,9 +352,10 @@
     "infoURL": "https://diode.io/prenet",
     "shortName": "diode",
     "chainId": 15,
-    "networkId": 15
+    "networkId": 15,
+    "dexes": []
   },
-  {
+  "16": {
     "name": "Flare Testnet Coston",
     "chain": "FLR",
     "network": "coston",
@@ -348,9 +371,10 @@
     "infoURL": "https://github.com/flare-eng/coston",
     "shortName": "cflr",
     "chainId": 16,
-    "networkId": 16
+    "networkId": 16,
+    "dexes": []
   },
-  {
+  "17": {
     "name": "ThaiChain 2.0 ThaiFi",
     "chain": "TCH",
     "network": "thaifi",
@@ -366,9 +390,10 @@
     "infoURL": "https://exp.thaifi.com",
     "shortName": "tfi",
     "chainId": 17,
-    "networkId": 17
+    "networkId": 17,
+    "dexes": []
   },
-  {
+  "18": {
     "name": "ThunderCore Testnet",
     "chain": "TST",
     "network": "testnet",
@@ -386,9 +411,10 @@
     "infoURL": "https://thundercore.com",
     "shortName": "TST",
     "chainId": 18,
-    "networkId": 18
+    "networkId": 18,
+    "dexes": []
   },
-  {
+  "19": {
     "name": "Songbird Canary-Network",
     "chain": "SGB",
     "network": "songbird",
@@ -413,9 +439,10 @@
         "url": "https://songbird-explorer.flare.network",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "20": {
     "name": "ELA-ETH-Sidechain Mainnet",
     "chain": "ETH",
     "network": "mainnet",
@@ -431,9 +458,10 @@
     "infoURL": "https://www.elastos.org/",
     "shortName": "elaeth",
     "chainId": 20,
-    "networkId": 20
+    "networkId": 20,
+    "dexes": []
   },
-  {
+  "21": {
     "name": "ELA-ETH-Sidechain Testnet",
     "chain": "ETH",
     "network": "testnet",
@@ -451,9 +479,10 @@
     "infoURL": "https://elaeth.io/",
     "shortName": "elaetht",
     "chainId": 21,
-    "networkId": 21
+    "networkId": 21,
+    "dexes": []
   },
-  {
+  "22": {
     "name": "ELA-DID-Sidechain Mainnet",
     "chain": "ETH",
     "network": "mainnet",
@@ -467,9 +496,10 @@
     "infoURL": "https://www.elastos.org/",
     "shortName": "eladid",
     "chainId": 22,
-    "networkId": 22
+    "networkId": 22,
+    "dexes": []
   },
-  {
+  "23": {
     "name": "ELA-DID-Sidechain Testnet",
     "chain": "ETH",
     "network": "testnet",
@@ -483,9 +513,10 @@
     "infoURL": "https://elaeth.io/",
     "shortName": "eladidt",
     "chainId": 23,
-    "networkId": 23
+    "networkId": 23,
+    "dexes": []
   },
-  {
+  "25": {
     "name": "Cronos Mainnet Beta",
     "chain": "CRO",
     "network": "mainnet",
@@ -508,9 +539,10 @@
         "url": "https://cronos.crypto.org/explorer",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "26": {
     "name": "Genesis L1 testnet",
     "chain": "genesis",
     "network": "testnet",
@@ -533,9 +565,10 @@
         "url": "https://testnet.genesisl1.org/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "27": {
     "name": "ShibaChain",
     "chain": "SHIB",
     "network": "mainnet",
@@ -558,9 +591,10 @@
         "url": "https://exp.shibachain.net/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "28": {
     "name": "Boba Network Rinkeby Testnet",
     "chain": "ETH",
     "network": "rinkeby",
@@ -592,9 +626,10 @@
           "url": "https://gateway.rinkeby.boba.network"
         }
       ]
-    }
+    },
+    "dexes": []
   },
-  {
+  "29": {
     "name": "Genesis L1",
     "chain": "genesis",
     "network": "mainnet",
@@ -617,9 +652,10 @@
         "url": "https://explorer.genesisl1.org/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "30": {
     "name": "RSK Mainnet",
     "chain": "RSK",
     "network": "mainnet",
@@ -646,9 +682,10 @@
         "url": "https://explorer.rsk.co",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "31": {
     "name": "RSK Testnet",
     "chain": "RSK",
     "network": "testnet",
@@ -667,9 +704,10 @@
     "infoURL": "https://rsk.co",
     "shortName": "trsk",
     "chainId": 31,
-    "networkId": 31
+    "networkId": 31,
+    "dexes": []
   },
-  {
+  "32": {
     "name": "GoodData Testnet",
     "chain": "GooD",
     "network": "testnet",
@@ -685,9 +723,10 @@
     "infoURL": "https://www.goodata.org",
     "shortName": "GooDT",
     "chainId": 32,
-    "networkId": 32
+    "networkId": 32,
+    "dexes": []
   },
-  {
+  "33": {
     "name": "GoodData Mainnet",
     "chain": "GooD",
     "network": "mainnet",
@@ -703,9 +742,10 @@
     "infoURL": "https://www.goodata.org",
     "shortName": "GooD",
     "chainId": 33,
-    "networkId": 33
+    "networkId": 33,
+    "dexes": []
   },
-  {
+  "35": {
     "name": "TBWG Chain",
     "chain": "TBWG",
     "network": "mainnet",
@@ -721,9 +761,10 @@
     "infoURL": "https://tbwg.io",
     "shortName": "tbwg",
     "chainId": 35,
-    "networkId": 35
+    "networkId": 35,
+    "dexes": []
   },
-  {
+  "38": {
     "name": "Valorbit",
     "chain": "VAL",
     "network": "mainnet",
@@ -740,9 +781,10 @@
     "shortName": "val",
     "chainId": 38,
     "networkId": 38,
-    "slip44": 538
+    "slip44": 538,
+    "dexes": []
   },
-  {
+  "40": {
     "name": "Telos EVM Mainnet",
     "chain": "TLOS",
     "network": "mainnet",
@@ -765,9 +807,10 @@
         "url": "https://teloscan.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "41": {
     "name": "Telos EVM Testnet",
     "chain": "TLOS",
     "network": "testnet",
@@ -785,9 +828,10 @@
     "infoURL": "https://telos.net",
     "shortName": "Telos EVM Testnet",
     "chainId": 41,
-    "networkId": 41
+    "networkId": 41,
+    "dexes": []
   },
-  {
+  "42": {
     "name": "Ethereum Testnet Kovan",
     "chain": "ETH",
     "network": "kovan",
@@ -810,9 +854,12 @@
     "infoURL": "https://kovan-testnet.github.io/website",
     "shortName": "kov",
     "chainId": 42,
-    "networkId": 42
+    "networkId": 42,
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "43": {
     "name": "Darwinia Pangolin Testnet",
     "chain": "pangolin",
     "network": "free testnet",
@@ -837,9 +884,10 @@
         "url": "https://pangolin.subscan.io",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "44": {
     "name": "Darwinia Crab Network",
     "chain": "crab",
     "network": "Crab network",
@@ -862,9 +910,10 @@
         "url": "https://crab.subscan.io",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "50": {
     "name": "XinFin Network Mainnet",
     "chain": "XDC",
     "network": "mainnet",
@@ -880,9 +929,10 @@
     "infoURL": "https://xinfin.org",
     "shortName": "xdc",
     "chainId": 50,
-    "networkId": 50
+    "networkId": 50,
+    "dexes": []
   },
-  {
+  "51": {
     "name": "XinFin Apothem Testnet",
     "chain": "TXDC",
     "network": "testnet",
@@ -898,9 +948,10 @@
     "infoURL": "https://xinfin.org",
     "shortName": "TXDC",
     "chainId": 51,
-    "networkId": 51
+    "networkId": 51,
+    "dexes": []
   },
-  {
+  "52": {
     "name": "CoinEx Smart Chain Mainnet",
     "chain": "CSC",
     "network": "mainnet",
@@ -916,9 +967,10 @@
     "infoURL": "https://www.coinex.org/",
     "shortName": "cet",
     "chainId": 52,
-    "networkId": 52
+    "networkId": 52,
+    "dexes": []
   },
-  {
+  "53": {
     "name": "CoinEx Smart Chain Testnet",
     "chain": "CSC",
     "network": "testnet",
@@ -934,9 +986,10 @@
     "infoURL": "https://www.coinex.org/",
     "shortName": "tcet",
     "chainId": 53,
-    "networkId": 53
+    "networkId": 53,
+    "dexes": []
   },
-  {
+  "55": {
     "name": "Zyx Mainnet",
     "chain": "ZYX",
     "network": "mainnet",
@@ -964,9 +1017,10 @@
         "url": "https://zyxscan.com/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "56": {
     "name": "Binance Smart Chain Mainnet",
     "chain": "BSC",
     "network": "mainnet",
@@ -1004,9 +1058,12 @@
         "url": "https://bscscan.com",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "57": {
     "name": "Syscoin Mainnet",
     "chain": "SYS",
     "network": "mainnet",
@@ -1032,9 +1089,10 @@
         "url": "https://explorer.syscoin.org",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "58": {
     "name": "Ontology Mainnet",
     "chain": "Ontology",
     "network": "mainnet",
@@ -1060,9 +1118,10 @@
         "url": "https://explorer.ont.io/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "59": {
     "name": "EOS Mainnet",
     "chain": "EOS",
     "network": "mainnet",
@@ -1085,9 +1144,10 @@
         "url": "https://bloks.eosargentina.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "60": {
     "name": "GoChain",
     "chain": "GO",
     "network": "mainnet",
@@ -1113,9 +1173,10 @@
         "url": "https://explorer.gochain.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "61": {
     "name": "Ethereum Classic Mainnet",
     "chain": "ETC",
     "network": "mainnet",
@@ -1141,9 +1202,10 @@
         "url": "https://blockscout.com/etc/mainnet",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "62": {
     "name": "Ethereum Classic Testnet Morden",
     "chain": "ETC",
     "network": "testnet",
@@ -1157,9 +1219,10 @@
     "infoURL": "https://ethereumclassic.org",
     "shortName": "tetc",
     "chainId": 62,
-    "networkId": 2
+    "networkId": 2,
+    "dexes": []
   },
-  {
+  "63": {
     "name": "Ethereum Classic Testnet Mordor",
     "chain": "ETC",
     "network": "testnet",
@@ -1173,9 +1236,10 @@
     "infoURL": "https://github.com/eth-classic/mordor/",
     "shortName": "metc",
     "chainId": 63,
-    "networkId": 7
+    "networkId": 7,
+    "dexes": []
   },
-  {
+  "64": {
     "name": "Ellaism",
     "chain": "ELLA",
     "network": "mainnet",
@@ -1192,9 +1256,10 @@
     "shortName": "ella",
     "chainId": 64,
     "networkId": 64,
-    "slip44": 163
+    "slip44": 163,
+    "dexes": []
   },
-  {
+  "65": {
     "name": "OKExChain Testnet",
     "chain": "okexchain",
     "network": "testnet",
@@ -1219,9 +1284,12 @@
         "url": "https://www.oklink.com/okexchain-test",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "66": {
     "name": "OKExChain Mainnet",
     "chain": "okexchain",
     "network": "mainnet",
@@ -1246,9 +1314,12 @@
         "url": "https://www.oklink.com/okexchain",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "67": {
     "name": "DBChain Testnet",
     "chain": "DBM",
     "network": "testnet",
@@ -1264,9 +1335,10 @@
     "infoURL": "http://test.dbmbp.com",
     "shortName": "dbm",
     "chainId": 67,
-    "networkId": 67
+    "networkId": 67,
+    "dexes": []
   },
-  {
+  "68": {
     "name": "SoterOne Mainnet",
     "chain": "SOTER",
     "network": "mainnet",
@@ -1282,9 +1354,10 @@
     "infoURL": "https://www.soterone.com",
     "shortName": "SO1",
     "chainId": 68,
-    "networkId": 68
+    "networkId": 68,
+    "dexes": []
   },
-  {
+  "69": {
     "name": "Optimistic Ethereum Testnet Kovan",
     "chain": "ETH",
     "network": "kovan",
@@ -1300,9 +1373,10 @@
     "infoURL": "https://optimism.io",
     "shortName": "okov",
     "chainId": 69,
-    "networkId": 69
+    "networkId": 69,
+    "dexes": []
   },
-  {
+  "76": {
     "name": "Mix",
     "chain": "MIX",
     "network": "mainnet",
@@ -1319,9 +1393,10 @@
     "shortName": "mix",
     "chainId": 76,
     "networkId": 76,
-    "slip44": 76
+    "slip44": 76,
+    "dexes": []
   },
-  {
+  "77": {
     "name": "POA Network Sokol",
     "chain": "POA",
     "network": "sokol",
@@ -1348,9 +1423,10 @@
         "url": "https://blockscout.com/poa/sokol",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "78": {
     "name": "PrimusChain mainnet",
     "chain": "PC",
     "network": "mainnet",
@@ -1366,9 +1442,10 @@
     "infoURL": "https://primusmoney.com",
     "shortName": "primuschain",
     "chainId": 78,
-    "networkId": 78
+    "networkId": 78,
+    "dexes": []
   },
-  {
+  "80": {
     "name": "GeneChain",
     "chain": "GeneChain",
     "network": "mainnet",
@@ -1391,9 +1468,10 @@
         "url": "https://scan.genechain.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "82": {
     "name": "Meter Mainnet",
     "chain": "METER",
     "network": "mainnet",
@@ -1418,9 +1496,10 @@
         "url": "https://scan.meter.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "83": {
     "name": "Meter Testnet",
     "chain": "METER Testnet",
     "network": "testnet",
@@ -1445,9 +1524,10 @@
         "url": "https://scan-warringstakes.meter.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "85": {
     "name": "GateChain Testnet",
     "chainId": 85,
     "shortName": "gttest",
@@ -1472,9 +1552,10 @@
         "standard": "EIP3091"
       }
     ],
-    "infoURL": "https://www.gatechain.io"
+    "infoURL": "https://www.gatechain.io",
+    "dexes": []
   },
-  {
+  "86": {
     "name": "GateChain Mainnet",
     "chainId": 86,
     "shortName": "gt",
@@ -1499,9 +1580,10 @@
         "standard": "EIP3091"
       }
     ],
-    "infoURL": "https://www.gatechain.io"
+    "infoURL": "https://www.gatechain.io",
+    "dexes": []
   },
-  {
+  "88": {
     "name": "TomoChain",
     "chain": "TOMO",
     "network": "mainnet",
@@ -1518,9 +1600,10 @@
     "shortName": "tomo",
     "chainId": 88,
     "networkId": 88,
-    "slip44": 889
+    "slip44": 889,
+    "dexes": []
   },
-  {
+  "95": {
     "name": "CryptoKylin Testnet",
     "chain": "EOS",
     "network": "testnet",
@@ -1543,9 +1626,10 @@
         "url": "https://kylin.eosargentina.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "96": {
     "name": "NEXT Smart Chain",
     "chain": "NSC",
     "network": "mainnet",
@@ -1570,9 +1654,10 @@
         "url": "https://explorer.nextsmartchain.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "97": {
     "name": "Binance Smart Chain Testnet",
     "chain": "BSC",
     "network": "Chapel",
@@ -1602,9 +1687,12 @@
         "url": "https://testnet.bscscan.com",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "99": {
     "name": "POA Network Core",
     "chain": "POA",
     "network": "core",
@@ -1631,9 +1719,10 @@
         "url": "https://blockscout.com/poa/core",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100": {
     "name": "xDAI Chain",
     "chain": "XDAI",
     "network": "mainnet",
@@ -1666,9 +1755,12 @@
         "url": "https://blockscout.com/poa/xdai",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "101": {
     "name": "EtherInc",
     "chain": "ETI",
     "network": "mainnet",
@@ -1685,9 +1777,10 @@
     "shortName": "eti",
     "chainId": 101,
     "networkId": 1,
-    "slip44": 464
+    "slip44": 464,
+    "dexes": []
   },
-  {
+  "102": {
     "name": "Web3Games Testnet",
     "chain": "Web3Games",
     "network": "testnet",
@@ -1703,9 +1796,10 @@
     "infoURL": "https://web3games.org/",
     "shortName": "w3g",
     "chainId": 102,
-    "networkId": 102
+    "networkId": 102,
+    "dexes": []
   },
-  {
+  "106": {
     "name": "Velas EVM Mainnet",
     "chain": "Velas",
     "network": "mainnet",
@@ -1730,9 +1824,10 @@
         "url": "https://evmexplorer.velas.com",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "108": {
     "name": "ThunderCore Mainnet",
     "chain": "TT",
     "network": "mainnet",
@@ -1751,9 +1846,10 @@
     "shortName": "TT",
     "chainId": 108,
     "networkId": 108,
-    "slip44": 1001
+    "slip44": 1001,
+    "dexes": []
   },
-  {
+  "110": {
     "name": "Proton Testnet",
     "chain": "XPR",
     "network": "testnet",
@@ -1769,9 +1865,10 @@
     "infoURL": "https://protonchain.com",
     "shortName": "xpr",
     "chainId": 110,
-    "networkId": 110
+    "networkId": 110,
+    "dexes": []
   },
-  {
+  "111": {
     "name": "EtherLite Chain",
     "chain": "ETL",
     "network": "mainnet",
@@ -1790,9 +1887,10 @@
     "shortName": "ETL",
     "chainId": 111,
     "networkId": 111,
-    "icon": "etherlite"
+    "icon": "etherlite",
+    "dexes": []
   },
-  {
+  "122": {
     "name": "Fuse Mainnet",
     "chain": "FUSE",
     "network": "mainnet",
@@ -1808,9 +1906,12 @@
     "infoURL": "https://fuse.io/",
     "shortName": "fuse",
     "chainId": 122,
-    "networkId": 122
+    "networkId": 122,
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "123": {
     "name": "Fuse Sparknet",
     "chain": "fuse",
     "network": "testnet",
@@ -1828,9 +1929,10 @@
     "infoURL": "https://docs.fuse.io/general/fuse-network-blockchain/fuse-testnet",
     "shortName": "spark",
     "chainId": 123,
-    "networkId": 123
+    "networkId": 123,
+    "dexes": []
   },
-  {
+  "124": {
     "name": "Decentralized Web Mainnet",
     "shortName": "dwu",
     "chain": "DWU",
@@ -1846,9 +1948,10 @@
       "name": "Decentralized Web Utility",
       "symbol": "DWU",
       "decimals": 18
-    }
+    },
+    "dexes": []
   },
-  {
+  "127": {
     "name": "Factory 127 Mainnet",
     "chain": "FETH",
     "network": "factory127 mainnet",
@@ -1863,9 +1966,10 @@
     "shortName": "feth",
     "chainId": 127,
     "networkId": 127,
-    "slip44": 127
+    "slip44": 127,
+    "dexes": []
   },
-  {
+  "128": {
     "name": "Huobi ECO Chain Mainnet",
     "chain": "Heco",
     "network": "mainnet",
@@ -1892,9 +1996,12 @@
         "url": "https://hecoinfo.com",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "137": {
     "name": "Polygon Mainnet",
     "chain": "Polygon",
     "network": "mainnet",
@@ -1923,9 +2030,12 @@
         "url": "https://polygonscan.com/",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "142": {
     "name": "DAX CHAIN",
     "chain": "DAX",
     "network": "mainnet",
@@ -1941,9 +2051,10 @@
     "infoURL": "https://prodax.io/",
     "shortName": "dax",
     "chainId": 142,
-    "networkId": 142
+    "networkId": 142,
+    "dexes": []
   },
-  {
+  "162": {
     "name": "Lightstreams Testnet",
     "chain": "PHT",
     "network": "sirius",
@@ -1961,9 +2072,10 @@
     "infoURL": "https://explorer.sirius.lightstreams.io",
     "shortName": "tpht",
     "chainId": 162,
-    "networkId": 162
+    "networkId": 162,
+    "dexes": []
   },
-  {
+  "163": {
     "name": "Lightstreams Mainnet",
     "chain": "PHT",
     "network": "mainnet",
@@ -1979,9 +2091,10 @@
     "infoURL": "https://explorer.lightstreams.io",
     "shortName": "pht",
     "chainId": 163,
-    "networkId": 163
+    "networkId": 163,
+    "dexes": []
   },
-  {
+  "170": {
     "name": "HOO Smart Chain Testnet",
     "chain": "ETH",
     "network": "testnet",
@@ -1999,9 +2112,10 @@
     "infoURL": "https://www.hoosmartchain.com",
     "shortName": "hoosmartchain",
     "chainId": 170,
-    "networkId": 170
+    "networkId": 170,
+    "dexes": []
   },
-  {
+  "172": {
     "name": "Latam-Blockchain Resil Testnet",
     "chain": "Resil",
     "network": "testnet",
@@ -2020,9 +2134,10 @@
     "infoURL": "https://latam-blockchain.com",
     "shortName": "resil",
     "chainId": 172,
-    "networkId": 172
+    "networkId": 172,
+    "dexes": []
   },
-  {
+  "186": {
     "name": "Seele Mainnet",
     "chain": "Seele",
     "network": "mainnet",
@@ -2045,9 +2160,10 @@
         "url": "https://seeleview.net/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "199": {
     "name": "BitTorrent Chain Mainnet",
     "chain": "BTTC",
     "network": "mainnet",
@@ -2070,9 +2186,10 @@
         "url": "https://scan.bittorrentchain.io/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "200": {
     "name": "Arbitrum on xDai",
     "chain": "AOX",
     "network": "xdai",
@@ -2099,9 +2216,10 @@
     "parent": {
       "chain": "eip155-100",
       "type": "L2"
-    }
+    },
+    "dexes": []
   },
-  {
+  "211": {
     "name": "Freight Trust Network",
     "chain": "EDI",
     "network": "freight & trade network",
@@ -2120,9 +2238,10 @@
     "infoURL": "https://freighttrust.com",
     "shortName": "EDI",
     "chainId": 211,
-    "networkId": 0
+    "networkId": 0,
+    "dexes": []
   },
-  {
+  "222": {
     "name": "Permission",
     "chain": "ASK",
     "network": "ASK",
@@ -2139,9 +2258,10 @@
     "shortName": "ASK",
     "chainId": 222,
     "networkId": 2221,
-    "slip44": 2221
+    "slip44": 2221,
+    "dexes": []
   },
-  {
+  "246": {
     "name": "Energy Web Chain",
     "chain": "Energy Web Chain",
     "network": "mainnet",
@@ -2169,9 +2289,10 @@
         "url": "https://explorer.energyweb.org",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "250": {
     "name": "Fantom Opera",
     "chain": "FTM",
     "network": "mainnet",
@@ -2198,9 +2319,12 @@
         "icon": "ftmscan",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "256": {
     "name": "Huobi ECO Chain Testnet",
     "chain": "Heco",
     "network": "testnet",
@@ -2219,9 +2343,12 @@
     "infoURL": "https://testnet.hecoinfo.com",
     "shortName": "hecot",
     "chainId": 256,
-    "networkId": 256
+    "networkId": 256,
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "262": {
     "name": "SUR Blockchain Network",
     "chain": "SUR",
     "network": "mainnet",
@@ -2246,9 +2373,10 @@
         "icon": "SUR",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "269": {
     "name": "High Performance Blockchain",
     "chain": "HPB",
     "network": "mainnet",
@@ -2275,9 +2403,10 @@
         "url": "https://hscan.org/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "288": {
     "name": "Boba Network",
     "chain": "ETH",
     "network": "mainnet",
@@ -2309,9 +2438,10 @@
           "url": "https://gateway.boba.network"
         }
       ]
-    }
+    },
+    "dexes": []
   },
-  {
+  "321": {
     "name": "KCC Mainnet",
     "chain": "KCC",
     "network": "mainnet",
@@ -2335,9 +2465,10 @@
         "url": "https://explorer.kcc.io/en",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "322": {
     "name": "KCC Testnet",
     "chain": "KCC",
     "network": "testnet",
@@ -2363,9 +2494,10 @@
         "url": "https://scan-testnet.kcc.network",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "336": {
     "name": "Shiden",
     "chain": "SDN",
     "network": "shiden",
@@ -2389,9 +2521,10 @@
         "url": "https://shiden.subscan.io",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "338": {
     "name": "Cronos Testnet",
     "chain": "CRO",
     "network": "testnet",
@@ -2417,9 +2550,10 @@
         "url": "https://cronos.crypto.org/explorer/testnet3",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "361": {
     "name": "Theta Mainnet",
     "chain": "Theta",
     "network": "mainnet",
@@ -2442,9 +2576,10 @@
         "url": "https://explorer.thetatoken.org",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "363": {
     "name": "Theta Sapphire Testnet",
     "chain": "Theta",
     "network": "testnet_sapphire",
@@ -2467,9 +2602,10 @@
         "url": "https://guardian-testnet-sapphire-explorer.thetatoken.org",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "364": {
     "name": "Theta Amber Testnet",
     "chain": "Theta",
     "network": "testnet_amber",
@@ -2492,9 +2628,10 @@
         "url": "https://guardian-testnet-amber-explorer.thetatoken.org",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "365": {
     "name": "Theta Testnet",
     "chain": "Theta",
     "network": "testnet",
@@ -2517,9 +2654,10 @@
         "url": "https://testnet-explorer.thetatoken.org",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "369": {
     "name": "PulseChain Mainnet",
     "shortName": "pls",
     "chain": "PLS",
@@ -2536,9 +2674,10 @@
       "name": "Pulse",
       "symbol": "PLS",
       "decimals": 18
-    }
+    },
+    "dexes": []
   },
-  {
+  "385": {
     "name": "Lisinski",
     "chain": "CRO",
     "network": "mainnet",
@@ -2556,9 +2695,10 @@
     "infoURL": "https://lisinski.online",
     "shortName": "lisinski",
     "chainId": 385,
-    "networkId": 385
+    "networkId": 385,
+    "dexes": []
   },
-  {
+  "420": {
     "name": "Optimistic Ethereum Testnet Goerli",
     "chain": "ETH",
     "network": "goerli",
@@ -2574,9 +2714,10 @@
     "infoURL": "https://optimism.io",
     "shortName": "ogor",
     "chainId": 420,
-    "networkId": 420
+    "networkId": 420,
+    "dexes": []
   },
-  {
+  "499": {
     "name": "Rupaya",
     "chain": "RUPX",
     "network": "mainnet",
@@ -2591,9 +2732,10 @@
     "shortName": "rupx",
     "chainId": 499,
     "networkId": 499,
-    "slip44": 499
+    "slip44": 499,
+    "dexes": []
   },
-  {
+  "558": {
     "name": "Tao Network",
     "chain": "TAO",
     "network": "core",
@@ -2612,9 +2754,10 @@
     "infoURL": "https://tao.network",
     "shortName": "tao",
     "chainId": 558,
-    "networkId": 558
+    "networkId": 558,
+    "dexes": []
   },
-  {
+  "588": {
     "name": "Metis Stardust Testnet",
     "chain": "ETH",
     "network": "rinkeby",
@@ -2646,9 +2789,10 @@
           "url": "https://bridge.metis.io"
         }
       ]
-    }
+    },
+    "dexes": []
   },
-  {
+  "595": {
     "name": "Acala Mandala Testnet",
     "chain": "mACA",
     "network": "testnet",
@@ -2662,9 +2806,10 @@
     "infoURL": "https://acala.network",
     "shortName": "maca",
     "chainId": 595,
-    "networkId": 595
+    "networkId": 595,
+    "dexes": []
   },
-  {
+  "666": {
     "name": "Pixie Chain Testnet",
     "chain": "PixieChain",
     "network": "testnet",
@@ -2683,9 +2828,10 @@
     "infoURL": "https://scan-testnet.chain.pixie.xyz",
     "shortName": "pixie-chain-testnet",
     "chainId": 666,
-    "networkId": 666
+    "networkId": 666,
+    "dexes": []
   },
-  {
+  "686": {
     "name": "Karura Network",
     "chain": "KAR",
     "network": "mainnet",
@@ -2700,9 +2846,10 @@
     "shortName": "kar",
     "chainId": 686,
     "networkId": 686,
-    "slip44": 686
+    "slip44": 686,
+    "dexes": []
   },
-  {
+  "721": {
     "name": "Factory 127 Testnet",
     "chain": "FETH",
     "network": "factory127 testnet",
@@ -2717,9 +2864,10 @@
     "shortName": "tfeth",
     "chainId": 721,
     "networkId": 721,
-    "slip44": 721
+    "slip44": 721,
+    "dexes": []
   },
-  {
+  "777": {
     "name": "cheapETH",
     "chain": "cheapETH",
     "network": "cheapnet",
@@ -2735,9 +2883,10 @@
     "infoURL": "https://cheapeth.org/",
     "shortName": "cth",
     "chainId": 777,
-    "networkId": 777
+    "networkId": 777,
+    "dexes": []
   },
-  {
+  "787": {
     "name": "Acala Network",
     "chain": "ACA",
     "network": "mainnet",
@@ -2752,9 +2901,10 @@
     "shortName": "aca",
     "chainId": 787,
     "networkId": 787,
-    "slip44": 787
+    "slip44": 787,
+    "dexes": []
   },
-  {
+  "803": {
     "name": "Haic",
     "chain": "Haic",
     "network": "mainnet",
@@ -2770,9 +2920,10 @@
     "infoURL": "https://www.haichain.io/",
     "shortName": "haic",
     "chainId": 803,
-    "networkId": 803
+    "networkId": 803,
+    "dexes": []
   },
-  {
+  "820": {
     "name": "Callisto Mainnet",
     "chain": "CLO",
     "network": "mainnet",
@@ -2789,9 +2940,10 @@
     "shortName": "clo",
     "chainId": 820,
     "networkId": 1,
-    "slip44": 820
+    "slip44": 820,
+    "dexes": []
   },
-  {
+  "821": {
     "name": "Callisto Testnet",
     "chain": "CLO",
     "network": "testnet",
@@ -2805,9 +2957,10 @@
     "infoURL": "https://callisto.network",
     "shortName": "tclo",
     "chainId": 821,
-    "networkId": 2
+    "networkId": 2,
+    "dexes": []
   },
-  {
+  "880": {
     "name": "Ambros Chain Mainnet",
     "chain": "ambroschain",
     "network": "mainnet",
@@ -2830,9 +2983,10 @@
         "url": "https://explorer.ambroschain.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "888": {
     "name": "Wanchain",
     "chain": "WAN",
     "network": "mainnet",
@@ -2849,9 +3003,10 @@
     "shortName": "wan",
     "chainId": 888,
     "networkId": 888,
-    "slip44": 5718350
+    "slip44": 5718350,
+    "dexes": []
   },
-  {
+  "940": {
     "name": "PulseChain Testnet",
     "shortName": "tpls",
     "chain": "tPLS",
@@ -2868,9 +3023,10 @@
       "name": "Test Pulse",
       "symbol": "tPLS",
       "decimals": 18
-    }
+    },
+    "dexes": []
   },
-  {
+  "977": {
     "name": "Nepal Blockchain Network",
     "chain": "YETI",
     "network": "mainnet",
@@ -2889,9 +3045,10 @@
     "infoURL": "https://nepalblockchain.network",
     "shortName": "yeti",
     "chainId": 977,
-    "networkId": 977
+    "networkId": 977,
+    "dexes": []
   },
-  {
+  "998": {
     "name": "Lucky Network",
     "chain": "LN",
     "network": "mainnet",
@@ -2922,9 +3079,10 @@
         "url": "https://lnscan.org",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "999": {
     "name": "Wanchain Testnet",
     "chain": "WAN",
     "network": "testnet",
@@ -2940,9 +3098,10 @@
     "infoURL": "https://testnet.wanscan.org",
     "shortName": "twan",
     "chainId": 999,
-    "networkId": 999
+    "networkId": 999,
+    "dexes": []
   },
-  {
+  "1001": {
     "name": "Klaytn Testnet Baobab",
     "chain": "KLAY",
     "network": "baobab",
@@ -2960,9 +3119,10 @@
     "infoURL": "https://www.klaytn.com/",
     "shortName": "Baobab",
     "chainId": 1001,
-    "networkId": 1001
+    "networkId": 1001,
+    "dexes": []
   },
-  {
+  "1007": {
     "name": "Newton Testnet",
     "chain": "NEW",
     "network": "testnet",
@@ -2978,9 +3138,10 @@
     "infoURL": "https://www.newtonproject.org/",
     "shortName": "tnew",
     "chainId": 1007,
-    "networkId": 1007
+    "networkId": 1007,
+    "dexes": []
   },
-  {
+  "1010": {
     "name": "Evrice Network",
     "chain": "EVC",
     "network": "Evrice",
@@ -2997,9 +3158,10 @@
     "shortName": "EVC",
     "chainId": 1010,
     "networkId": 1010,
-    "slip44": 1020
+    "slip44": 1020,
+    "dexes": []
   },
-  {
+  "1012": {
     "name": "Newton",
     "chain": "NEW",
     "network": "mainnet",
@@ -3015,9 +3177,10 @@
     "infoURL": "https://www.newtonproject.org/",
     "shortName": "new",
     "chainId": 1012,
-    "networkId": 1012
+    "networkId": 1012,
+    "dexes": []
   },
-  {
+  "1022": {
     "name": "Sakura",
     "chain": "Sakura",
     "network": "sakura",
@@ -3031,9 +3194,10 @@
     "infoURL": "https://clover.finance/sakura",
     "shortName": "sku",
     "chainId": 1022,
-    "networkId": 1022
+    "networkId": 1022,
+    "dexes": []
   },
-  {
+  "1023": {
     "name": "Clover Testnet",
     "chain": "Clover",
     "network": "clover testnet",
@@ -3047,9 +3211,10 @@
     "infoURL": "https://clover.finance",
     "shortName": "tclv",
     "chainId": 1023,
-    "networkId": 1023
+    "networkId": 1023,
+    "dexes": []
   },
-  {
+  "1024": {
     "name": "Clover Mainnet",
     "chain": "Clover",
     "network": "clover mainnet",
@@ -3067,9 +3232,10 @@
     "infoURL": "https://clover.finance",
     "shortName": "clv",
     "chainId": 1024,
-    "networkId": 1024
+    "networkId": 1024,
+    "dexes": []
   },
-  {
+  "1028": {
     "name": "BitTorrent Chain Testnet",
     "chain": "BTTC",
     "network": "testnet",
@@ -3092,9 +3258,10 @@
         "url": "https://testscan.bittorrentchain.io/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1088": {
     "name": "Metis Andromeda Mainnet",
     "chain": "ETH",
     "network": "mainnet",
@@ -3126,9 +3293,10 @@
           "url": "https://bridge.metis.io"
         }
       ]
-    }
+    },
+    "dexes": []
   },
-  {
+  "1139": {
     "name": "MathChain",
     "chain": "MATH",
     "network": "mainnet",
@@ -3145,9 +3313,10 @@
     "infoURL": "https://mathchain.org",
     "shortName": "MATH",
     "chainId": 1139,
-    "networkId": 1139
+    "networkId": 1139,
+    "dexes": []
   },
-  {
+  "1140": {
     "name": "MathChain Testnet",
     "chain": "MATH",
     "network": "testnet",
@@ -3165,9 +3334,10 @@
     "infoURL": "https://mathchain.org",
     "shortName": "tMATH",
     "chainId": 1140,
-    "networkId": 1140
+    "networkId": 1140,
+    "dexes": []
   },
-  {
+  "1202": {
     "name": "World Trade Technical Chain Mainnet",
     "chain": "WTT",
     "network": "mainnet",
@@ -3191,9 +3361,10 @@
         "url": "https://explorer.cadaut.com",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1213": {
     "name": "Popcateum Mainnet",
     "chain": "POPCATEUM",
     "network": "mainnet",
@@ -3216,9 +3387,10 @@
         "url": "https://explorer.popcateum.org",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1280": {
     "name": "HALO Mainnet",
     "chain": "HALO",
     "network": "mainnet",
@@ -3241,9 +3413,10 @@
         "url": "https://browser.halo.land/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1284": {
     "name": "Moonbeam",
     "chain": "MOON",
     "network": "moonbeam",
@@ -3260,9 +3433,10 @@
     "infoURL": "https://moonbeam.network/networks/moonbeam/",
     "shortName": "mbeam",
     "chainId": 1284,
-    "networkId": 1284
+    "networkId": 1284,
+    "dexes": []
   },
-  {
+  "1285": {
     "name": "Moonriver",
     "chain": "MOON",
     "network": "moonriver",
@@ -3286,9 +3460,12 @@
         "url": "https://moonriver.moonscan.io/",
         "standard": "none"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "1286": {
     "name": "Moonrock",
     "chain": "MOON",
     "network": "moonrock",
@@ -3302,9 +3479,10 @@
     "infoURL": "",
     "shortName": "mrock",
     "chainId": 1286,
-    "networkId": 1286
+    "networkId": 1286,
+    "dexes": []
   },
-  {
+  "1287": {
     "name": "Moonbase Alpha",
     "chain": "MOON",
     "network": "moonbase",
@@ -3328,9 +3506,12 @@
         "url": "https://moonbase.moonscan.io/",
         "standard": "none"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "1288": {
     "name": "Moonshadow",
     "chain": "MOON",
     "network": "moonshadow",
@@ -3344,9 +3525,10 @@
     "infoURL": "https://docs.moonbeam.network/networks/overview/",
     "shortName": "mshadow",
     "chainId": 1288,
-    "networkId": 1288
+    "networkId": 1288,
+    "dexes": []
   },
-  {
+  "1618": {
     "name": "Catecoin Chain Mainnet",
     "chain": "Catechain",
     "network": "mainnet",
@@ -3362,9 +3544,10 @@
     "infoURL": "https://catechain.com",
     "shortName": "cate",
     "chainId": 1618,
-    "networkId": 1618
+    "networkId": 1618,
+    "dexes": []
   },
-  {
+  "1620": {
     "name": "Atheios",
     "chain": "ATH",
     "network": "mainnet",
@@ -3381,9 +3564,10 @@
     "shortName": "ath",
     "chainId": 1620,
     "networkId": 11235813,
-    "slip44": 1620
+    "slip44": 1620,
+    "dexes": []
   },
-  {
+  "1657": {
     "name": "Btachain",
     "chain": "btachain",
     "network": "mainnet",
@@ -3399,9 +3583,10 @@
     "infoURL": "https://bitcoinasset.io/",
     "shortName": "bta",
     "chainId": 1657,
-    "networkId": 1657
+    "networkId": 1657,
+    "dexes": []
   },
-  {
+  "1856": {
     "name": "Teslafunds",
     "chain": "TSF",
     "network": "mainnet",
@@ -3417,9 +3602,10 @@
     "infoURL": "https://teslafunds.io",
     "shortName": "tsf",
     "chainId": 1856,
-    "networkId": 1
+    "networkId": 1,
+    "dexes": []
   },
-  {
+  "1987": {
     "name": "EtherGem",
     "chain": "EGEM",
     "network": "mainnet",
@@ -3436,9 +3622,10 @@
     "shortName": "egem",
     "chainId": 1987,
     "networkId": 1987,
-    "slip44": 1987
+    "slip44": 1987,
+    "dexes": []
   },
-  {
+  "2020": {
     "name": "420coin",
     "chain": "420",
     "network": "mainnet",
@@ -3452,9 +3639,10 @@
     "infoURL": "https://420integrated.com",
     "shortName": "420",
     "chainId": 2020,
-    "networkId": 2020
+    "networkId": 2020,
+    "dexes": []
   },
-  {
+  "2021": {
     "name": "Edgeware Mainnet",
     "chain": "EDG",
     "network": "mainnet",
@@ -3470,9 +3658,10 @@
     "infoURL": "http://edgewa.re",
     "shortName": "edg",
     "chainId": 2021,
-    "networkId": 2021
+    "networkId": 2021,
+    "dexes": []
   },
-  {
+  "2022": {
     "name": "Beresheet Testnet",
     "chain": "EDG",
     "network": "beresheet",
@@ -3488,9 +3677,10 @@
     "infoURL": "http://edgewa.re",
     "shortName": "edgt",
     "chainId": 2022,
-    "networkId": 2022
+    "networkId": 2022,
+    "dexes": []
   },
-  {
+  "2100": {
     "name": "Ecoball Mainnet",
     "chain": "ECO",
     "network": "mainnet",
@@ -3513,9 +3703,10 @@
         "url": "https://scan.ecoball.org/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "2101": {
     "name": "Ecoball Testnet Espuma",
     "chain": "ECO",
     "network": "espuma",
@@ -3538,9 +3729,10 @@
         "url": "https://espuma-scan.ecoball.org/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "2559": {
     "name": "Kortho Mainnet",
     "chain": "Kortho Chain",
     "network": "mainnet",
@@ -3556,9 +3748,10 @@
     "infoURL": "https://www.kortho.io/",
     "shortName": "ktoc",
     "chainId": 2559,
-    "networkId": 2559
+    "networkId": 2559,
+    "dexes": []
   },
-  {
+  "3331": {
     "name": "ZCore Testnet",
     "chain": "Beach",
     "network": "testnet",
@@ -3577,9 +3770,10 @@
     "infoURL": "https://zcore.cash",
     "shortName": "zcrbeach",
     "chainId": 3331,
-    "networkId": 3331
+    "networkId": 3331,
+    "dexes": []
   },
-  {
+  "3690": {
     "name": "Bittex Mainnet",
     "chain": "BTTX",
     "network": "mainnet",
@@ -3605,9 +3799,10 @@
         "icon": "etherscan",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "4002": {
     "name": "Fantom Testnet",
     "chain": "FTM",
     "network": "testnet",
@@ -3634,9 +3829,10 @@
         "icon": "ftmscan",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "4689": {
     "name": "IoTeX Network Mainnet",
     "chain": "iotex.io",
     "network": "mainnet",
@@ -3659,9 +3855,10 @@
         "url": "https://iotexscan.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "4690": {
     "name": "IoTeX Network Testnet",
     "chain": "iotex.io",
     "network": "testnet",
@@ -3686,9 +3883,10 @@
         "url": "https://testnet.iotexscan.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "5197": {
     "name": "EraSwap Mainnet",
     "chain": "ESN",
     "network": "mainnet",
@@ -3706,9 +3904,10 @@
     "infoURL": "https://eraswap.info/",
     "shortName": "es",
     "chainId": 5197,
-    "networkId": 5197
+    "networkId": 5197,
+    "dexes": []
   },
-  {
+  "5315": {
     "name": "Uzmi Network Mainnet",
     "chain": "UZMI",
     "network": "mainnet",
@@ -3724,9 +3923,10 @@
     "infoURL": "https://uzmigames.com.br/",
     "shortName": "UZMI",
     "chainId": 5315,
-    "networkId": 5315
+    "networkId": 5315,
+    "dexes": []
   },
-  {
+  "5700": {
     "name": "Syscoin Tanenbaum Testnet",
     "chain": "SYS",
     "network": "testnet",
@@ -3752,9 +3952,10 @@
         "url": "https://tanenbaum.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "5851": {
     "name": "Ontology Testnet",
     "chain": "Ontology",
     "network": "testnet",
@@ -3782,9 +3983,10 @@
         "url": "https://explorer.ont.io/testnet",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "5869": {
     "name": "Wegochain Rubidium Mainnet",
     "chain": "RBD",
     "network": "mainnet",
@@ -3801,9 +4003,10 @@
     "infoURL": "http://wegochain.io",
     "shortName": "rbd",
     "chainId": 5869,
-    "networkId": 5869
+    "networkId": 5869,
+    "dexes": []
   },
-  {
+  "6626": {
     "name": "Pixie Chain Mainnet",
     "chain": "PixieChain",
     "network": "mainnet",
@@ -3827,9 +4030,10 @@
         "url": "https://scan.chain.pixie.xyz",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "7878": {
     "name": "Hazlor Testnet",
     "chain": "SCAS",
     "network": "testnet",
@@ -3854,9 +4058,10 @@
         "url": "https://explorer.hazlor.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "8029": {
     "name": "MDGL Testnet",
     "chain": "MDGL",
     "network": "testnet",
@@ -3872,9 +4077,10 @@
     "infoURL": "https://mdgl.io",
     "shortName": "mdgl",
     "chainId": 8029,
-    "networkId": 8029
+    "networkId": 8029,
+    "dexes": []
   },
-  {
+  "8080": {
     "name": "GeneChain Adenine Testnet",
     "chain": "GeneChain",
     "network": "adenine",
@@ -3899,9 +4105,10 @@
         "url": "https://scan-testnet.genechain.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "8217": {
     "name": "Klaytn Mainnet Cypress",
     "chain": "KLAY",
     "network": "cypress",
@@ -3918,9 +4125,10 @@
     "shortName": "Cypress",
     "chainId": 8217,
     "networkId": 8217,
-    "slip44": 8217
+    "slip44": 8217,
+    "dexes": []
   },
-  {
+  "8285": {
     "name": "KorthoTest",
     "chain": "Kortho",
     "network": "Test",
@@ -3936,9 +4144,10 @@
     "infoURL": "https://www.kortho.io/",
     "shortName": "Kortho",
     "chainId": 8285,
-    "networkId": 8285
+    "networkId": 8285,
+    "dexes": []
   },
-  {
+  "8723": {
     "name": "TOOL Global Mainnet",
     "chain": "OLO",
     "network": "mainnet",
@@ -3962,9 +4171,10 @@
         "url": "https://www.olo.network",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "8724": {
     "name": "TOOL Global Testnet",
     "chain": "OLO",
     "network": "testnet",
@@ -3983,9 +4193,10 @@
     "shortName": "tolo",
     "chainId": 8724,
     "networkId": 8724,
-    "slip44": 479
+    "slip44": 479,
+    "dexes": []
   },
-  {
+  "8888": {
     "name": "Ambros Chain Testnet",
     "chain": "ambroschain",
     "network": "testnet",
@@ -4008,9 +4219,10 @@
         "url": "https://testexplorer.ambroschain.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "8995": {
     "name": "bloxberg",
     "chain": "bloxberg",
     "network": "mainnet",
@@ -4028,9 +4240,10 @@
     "infoURL": "https://bloxberg.org",
     "shortName": "berg",
     "chainId": 8995,
-    "networkId": 8995
+    "networkId": 8995,
+    "dexes": []
   },
-  {
+  "9000": {
     "name": "Evmos Testnet",
     "chain": "Evmos",
     "network": "testnet",
@@ -4060,9 +4273,10 @@
         "url": "https://explorer.evmos.org",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "9999": {
     "name": "myOwn Testnet",
     "chain": "myOwn",
     "network": "testnet",
@@ -4078,9 +4292,10 @@
     "infoURL": "https://docs.bccloud.net/",
     "shortName": "myn",
     "chainId": 9999,
-    "networkId": 9999
+    "networkId": 9999,
+    "dexes": []
   },
-  {
+  "10000": {
     "name": "Smart Bitcoin Cash",
     "chain": "smartBCH",
     "network": "mainnet",
@@ -4099,9 +4314,10 @@
     "infoURL": "https://smartbch.org/",
     "shortName": "smartbch",
     "chainId": 10000,
-    "networkId": 10000
+    "networkId": 10000,
+    "dexes": []
   },
-  {
+  "10001": {
     "name": "Smart Bitcoin Cash Testnet",
     "chain": "smartBCHTest",
     "network": "testnet",
@@ -4118,9 +4334,10 @@
     "infoURL": "http://smartbch.org/",
     "shortName": "smartbchtest",
     "chainId": 10001,
-    "networkId": 10001
+    "networkId": 10001,
+    "dexes": []
   },
-  {
+  "10101": {
     "name": "Blockchain Genesis Mainnet",
     "chain": "GEN",
     "network": "mainnet",
@@ -4138,9 +4355,10 @@
     "infoURL": "https://www.xixoio.com/",
     "shortName": "GEN",
     "chainId": 10101,
-    "networkId": 10101
+    "networkId": 10101,
+    "dexes": []
   },
-  {
+  "12051": {
     "name": "Singularity ZERO Testnet",
     "chain": "ZERO",
     "network": "testnet",
@@ -4165,9 +4383,10 @@
         "url": "https://betaenv.singularity.gold:18002",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "12052": {
     "name": "Singularity ZERO Mainnet",
     "chain": "ZERO",
     "network": "mainnet",
@@ -4193,9 +4412,10 @@
         "url": "https://zeroscan.singularity.gold",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "16000": {
     "name": "MetaDot Mainnet",
     "chain": "MTT",
     "network": "mainnet",
@@ -4211,9 +4431,10 @@
     "infoURL": "https://metadot.network",
     "shortName": "mtt",
     "chainId": 16000,
-    "networkId": 16000
+    "networkId": 16000,
+    "dexes": []
   },
-  {
+  "16001": {
     "name": "MetaDot Testnet",
     "chain": "MTTTest",
     "network": "devnet",
@@ -4231,9 +4452,10 @@
     "infoURL": "https://metadot.network",
     "shortName": "mtttest",
     "chainId": 16001,
-    "networkId": 16001
+    "networkId": 16001,
+    "dexes": []
   },
-  {
+  "19845": {
     "name": "BTCIX Network",
     "chain": "BTCIX",
     "network": "mainnet",
@@ -4256,9 +4478,10 @@
         "url": "https://btcixscan.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "24484": {
     "name": "Webchain",
     "chain": "WEB",
     "network": "mainnet",
@@ -4275,9 +4498,10 @@
     "shortName": "web",
     "chainId": 24484,
     "networkId": 37129,
-    "slip44": 227
+    "slip44": 227,
+    "dexes": []
   },
-  {
+  "24734": {
     "name": "MintMe.com Coin",
     "chain": "MINTME",
     "network": "mainnet",
@@ -4293,9 +4517,10 @@
     "infoURL": "https://www.mintme.com",
     "shortName": "mintme",
     "chainId": 24734,
-    "networkId": 37480
+    "networkId": 37480,
+    "dexes": []
   },
-  {
+  "31102": {
     "name": "Ethersocial Network",
     "chain": "ESN",
     "network": "mainnet",
@@ -4312,9 +4537,10 @@
     "shortName": "esn",
     "chainId": 31102,
     "networkId": 1,
-    "slip44": 31102
+    "slip44": 31102,
+    "dexes": []
   },
-  {
+  "31337": {
     "name": "GoChain Testnet",
     "chain": "GO",
     "network": "testnet",
@@ -4338,9 +4564,10 @@
         "url": "https://testnet-explorer.gochain.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "32659": {
     "name": "Fusion Mainnet",
     "chain": "FSN",
     "network": "mainnet",
@@ -4357,9 +4584,10 @@
     "infoURL": "https://www.fusion.org/",
     "shortName": "fsn",
     "chainId": 32659,
-    "networkId": 32659
+    "networkId": 32659,
+    "dexes": []
   },
-  {
+  "39797": {
     "name": "Energi Mainnet",
     "chain": "NRG",
     "network": "mainnet",
@@ -4376,9 +4604,10 @@
     "shortName": "nrg",
     "chainId": 39797,
     "networkId": 39797,
-    "slip44": 39797
+    "slip44": 39797,
+    "dexes": []
   },
-  {
+  "42069": {
     "name": "pegglecoin",
     "chain": "42069",
     "network": "mainnet",
@@ -4392,9 +4621,10 @@
     "infoURL": "https://teampeggle.com",
     "shortName": "PC",
     "chainId": 42069,
-    "networkId": 42069
+    "networkId": 42069,
+    "dexes": []
   },
-  {
+  "42161": {
     "name": "Arbitrum One",
     "chainId": 42161,
     "shortName": "arb1",
@@ -4434,9 +4664,12 @@
           "url": "https://bridge.arbitrum.io"
         }
       ]
-    }
+    },
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "42220": {
     "name": "Celo Mainnet",
     "chainId": 42220,
     "shortName": "CELO",
@@ -4462,9 +4695,12 @@
         "url": "https://explorer.celo.org",
         "standard": "none"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "43110": {
     "name": "Athereum",
     "chain": "ATH",
     "network": "athereum",
@@ -4482,9 +4718,10 @@
     "infoURL": "https://athereum.ava.network",
     "shortName": "avaeth",
     "chainId": 43110,
-    "networkId": 43110
+    "networkId": 43110,
+    "dexes": []
   },
-  {
+  "43113": {
     "name": "Avalanche Fuji Testnet",
     "chain": "AVAX",
     "network": "testnet",
@@ -4509,9 +4746,12 @@
         "url": "https://testnet.snowtrace.io/",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "43114": {
     "name": "Avalanche Mainnet",
     "chain": "AVAX",
     "network": "mainnet",
@@ -4537,9 +4777,12 @@
         "url": "https://snowtrace.io/",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "44787": {
     "name": "Celo Alfajores Testnet",
     "chainId": 44787,
     "shortName": "ALFA",
@@ -4559,9 +4802,10 @@
       "https://celo.org/developers/faucet",
       "https://cauldron.pretoriaresearchlab.io/alfajores-faucet"
     ],
-    "infoURL": "https://docs.celo.org/"
+    "infoURL": "https://docs.celo.org/",
+    "dexes": []
   },
-  {
+  "49797": {
     "name": "Energi Testnet",
     "chain": "NRG",
     "network": "testnet",
@@ -4578,9 +4822,10 @@
     "shortName": "tnrg",
     "chainId": 49797,
     "networkId": 49797,
-    "slip44": 49797
+    "slip44": 49797,
+    "dexes": []
   },
-  {
+  "60000": {
     "name": "Thinkium Testnet Chain 0",
     "chain": "Thinkium",
     "network": "testnet",
@@ -4605,9 +4850,10 @@
         "url": "https://test0.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "60001": {
     "name": "Thinkium Testnet Chain 1",
     "chain": "Thinkium",
     "network": "testnet",
@@ -4632,9 +4878,10 @@
         "url": "https://test1.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "60002": {
     "name": "Thinkium Testnet Chain 2",
     "chain": "Thinkium",
     "network": "testnet",
@@ -4659,9 +4906,10 @@
         "url": "https://test2.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "60103": {
     "name": "Thinkium Testnet Chain 103",
     "chain": "Thinkium",
     "network": "testnet",
@@ -4686,9 +4934,10 @@
         "url": "https://test103.thinkiumscan.net",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "62320": {
     "name": "Celo Baklava Testnet",
     "chainId": 62320,
     "shortName": "BKLV",
@@ -4707,9 +4956,10 @@
       "https://docs.google.com/forms/d/e/1FAIpQLSdfr1BwUTYepVmmvfVUDRCwALejZ-TUva2YujNpvrEmPAX2pg/viewform",
       "https://cauldron.pretoriaresearchlab.io/baklava-faucet"
     ],
-    "infoURL": "https://docs.celo.org/"
+    "infoURL": "https://docs.celo.org/",
+    "dexes": []
   },
-  {
+  "70000": {
     "name": "Thinkium Mainnet Chain 0",
     "chain": "Thinkium",
     "network": "mainnet",
@@ -4732,9 +4982,10 @@
         "url": "https://chain0.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "70001": {
     "name": "Thinkium Mainnet Chain 1",
     "chain": "Thinkium",
     "network": "mainnet",
@@ -4757,9 +5008,10 @@
         "url": "https://chain1.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "70002": {
     "name": "Thinkium Mainnet Chain 2",
     "chain": "Thinkium",
     "network": "mainnet",
@@ -4782,9 +5034,10 @@
         "url": "https://chain2.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "70103": {
     "name": "Thinkium Mainnet Chain 103",
     "chain": "Thinkium",
     "network": "mainnet",
@@ -4807,9 +5060,10 @@
         "url": "https://chain103.thinkiumscan.net/",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "71393": {
     "name": "Polyjuice Testnet",
     "chain": "CKB",
     "network": "testnet",
@@ -4829,9 +5083,10 @@
     "infoURL": "https://github.com/nervosnetwork/godwoken",
     "shortName": "ckb",
     "chainId": 71393,
-    "networkId": 1
+    "networkId": 1,
+    "dexes": []
   },
-  {
+  "73799": {
     "name": "Energy Web Volta Testnet",
     "chain": "Volta",
     "network": "testnet",
@@ -4850,9 +5105,10 @@
     "infoURL": "https://energyweb.org",
     "shortName": "vt",
     "chainId": 73799,
-    "networkId": 73799
+    "networkId": 73799,
+    "dexes": []
   },
-  {
+  "78110": {
     "name": "Firenze test network",
     "chain": "ETH",
     "network": "testnet",
@@ -4868,9 +5124,10 @@
     "infoURL": "https://primusmoney.com",
     "shortName": "firenze",
     "chainId": 78110,
-    "networkId": 78110
+    "networkId": 78110,
+    "dexes": []
   },
-  {
+  "80001": {
     "name": "Polygon Testnet Mumbai",
     "chain": "Polygon",
     "network": "testnet",
@@ -4897,9 +5154,12 @@
         "url": "https://mumbai.polygonscan.com/",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "100000": {
     "name": "QuarkChain Mainnet Root",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -4915,9 +5175,10 @@
     "infoURL": "https://www.quarkchain.io/",
     "shortName": "qkc-r",
     "chainId": 100000,
-    "networkId": 100000
+    "networkId": 100000,
+    "dexes": []
   },
-  {
+  "100001": {
     "name": "QuarkChain Mainnet Shard 0",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -4944,9 +5205,10 @@
         "url": "https://mainnet.quarkchain.io/0",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100002": {
     "name": "QuarkChain Mainnet Shard 1",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -4973,9 +5235,10 @@
         "url": "https://mainnet.quarkchain.io/1",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100003": {
     "name": "QuarkChain Mainnet Shard 2",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5002,9 +5265,10 @@
         "url": "https://mainnet.quarkchain.io/2",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100004": {
     "name": "QuarkChain Mainnet Shard 3",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5031,9 +5295,10 @@
         "url": "https://mainnet.quarkchain.io/3",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100005": {
     "name": "QuarkChain Mainnet Shard 4",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5060,9 +5325,10 @@
         "url": "https://mainnet.quarkchain.io/4",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100006": {
     "name": "QuarkChain Mainnet Shard 5",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5089,9 +5355,10 @@
         "url": "https://mainnet.quarkchain.io/5",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100007": {
     "name": "QuarkChain Mainnet Shard 6",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5118,9 +5385,10 @@
         "url": "https://mainnet.quarkchain.io/6",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "100008": {
     "name": "QuarkChain Mainnet Shard 7",
     "chain": "QuarkChain",
     "network": "mainnet",
@@ -5147,9 +5415,10 @@
         "url": "https://mainnet.quarkchain.io/7",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110000": {
     "name": "QuarkChain Devnet Root",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5165,9 +5434,10 @@
     "infoURL": "https://www.quarkchain.io/",
     "shortName": "qkc-d-r",
     "chainId": 110000,
-    "networkId": 110000
+    "networkId": 110000,
+    "dexes": []
   },
-  {
+  "110001": {
     "name": "QuarkChain Devnet Shard 0",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5194,9 +5464,10 @@
         "url": "https://devnet.quarkchain.io/0",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110002": {
     "name": "QuarkChain Devnet Shard 1",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5223,9 +5494,10 @@
         "url": "https://devnet.quarkchain.io/1",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110003": {
     "name": "QuarkChain Devnet Shard 2",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5252,9 +5524,10 @@
         "url": "https://devnet.quarkchain.io/2",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110004": {
     "name": "QuarkChain Devnet Shard 3",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5281,9 +5554,10 @@
         "url": "https://devnet.quarkchain.io/3",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110005": {
     "name": "QuarkChain Devnet Shard 4",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5310,9 +5584,10 @@
         "url": "https://devnet.quarkchain.io/4",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110006": {
     "name": "QuarkChain Devnet Shard 5",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5339,9 +5614,10 @@
         "url": "https://devnet.quarkchain.io/5",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110007": {
     "name": "QuarkChain Devnet Shard 6",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5368,9 +5644,10 @@
         "url": "https://devnet.quarkchain.io/6",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "110008": {
     "name": "QuarkChain Devnet Shard 7",
     "chain": "QuarkChain",
     "network": "devnet",
@@ -5397,9 +5674,10 @@
         "url": "https://devnet.quarkchain.io/7",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "200625": {
     "name": "Akroma",
     "chain": "AKA",
     "network": "mainnet",
@@ -5416,9 +5694,10 @@
     "shortName": "aka",
     "chainId": 200625,
     "networkId": 200625,
-    "slip44": 200625
+    "slip44": 200625,
+    "dexes": []
   },
-  {
+  "201018": {
     "name": "Alaya Mainnet",
     "chain": "Alaya",
     "network": "mainnet",
@@ -5443,9 +5722,10 @@
         "url": "https://scan.alaya.network/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "201030": {
     "name": "Alaya Dev Testnet",
     "chain": "Alaya",
     "network": "testnet",
@@ -5472,9 +5752,10 @@
         "url": "https://devnetscan.alaya.network",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "210309": {
     "name": "PlatON Dev Testnet",
     "chain": "PlatON",
     "network": "testnet",
@@ -5501,9 +5782,10 @@
         "url": "https://devnetscan.platon.network/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "246529": {
     "name": "ARTIS sigma1",
     "chain": "ARTIS",
     "network": "sigma1",
@@ -5520,9 +5802,10 @@
     "shortName": "ats",
     "chainId": 246529,
     "networkId": 246529,
-    "slip44": 246529
+    "slip44": 246529,
+    "dexes": []
   },
-  {
+  "246785": {
     "name": "ARTIS Testnet tau1",
     "chain": "ARTIS",
     "network": "tau1",
@@ -5538,9 +5821,10 @@
     "infoURL": "https://artis.network",
     "shortName": "atstau",
     "chainId": 246785,
-    "networkId": 246785
+    "networkId": 246785,
+    "dexes": []
   },
-  {
+  "281121": {
     "name": "Social Smart Chain Mainnet",
     "chain": "SoChain",
     "network": "mainnet",
@@ -5557,9 +5841,10 @@
     "shortName": "SoChain",
     "chainId": 281121,
     "networkId": 281121,
-    "explorers": []
+    "explorers": [],
+    "dexes": []
   },
-  {
+  "333888": {
     "name": "Polis Testnet",
     "chain": "Sparta",
     "network": "testnet",
@@ -5578,9 +5863,10 @@
     "infoURL": "https://polis.tech",
     "shortName": "sparta",
     "chainId": 333888,
-    "networkId": 333888
+    "networkId": 333888,
+    "dexes": []
   },
-  {
+  "333999": {
     "name": "Polis Mainnet",
     "chain": "Olympus",
     "network": "mainnet",
@@ -5599,9 +5885,10 @@
     "infoURL": "https://polis.tech",
     "shortName": "olympus",
     "chainId": 333999,
-    "networkId": 333999
+    "networkId": 333999,
+    "dexes": []
   },
-  {
+  "421611": {
     "name": "Arbitrum Testnet Rinkeby",
     "chainId": 421611,
     "shortName": "arb-rinkeby",
@@ -5634,9 +5921,10 @@
           "url": "https://bridge.arbitrum.io"
         }
       ]
-    }
+    },
+    "dexes": []
   },
-  {
+  "955305": {
     "name": "Eluvio Content Fabric",
     "chain": "Eluvio",
     "network": "mainnet",
@@ -5669,9 +5957,10 @@
         "url": "https://explorer.eluv.io",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1313114": {
     "name": "Etho Protocol",
     "chain": "ETHO",
     "network": "mainnet",
@@ -5695,9 +5984,10 @@
         "url": "https://explorer.ethoprotocol.com",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1313500": {
     "name": "Xerom",
     "chain": "XERO",
     "network": "mainnet",
@@ -5713,9 +6003,10 @@
     "infoURL": "https://xerom.org",
     "shortName": "xero",
     "chainId": 1313500,
-    "networkId": 1313500
+    "networkId": 1313500,
+    "dexes": []
   },
-  {
+  "7762959": {
     "name": "Musicoin",
     "chain": "MUSIC",
     "network": "mainnet",
@@ -5732,9 +6023,10 @@
     "shortName": "music",
     "chainId": 7762959,
     "networkId": 7762959,
-    "slip44": 184
+    "slip44": 184,
+    "dexes": []
   },
-  {
+  "13371337": {
     "name": "PepChain Churchill",
     "chain": "PEP",
     "network": "testnet",
@@ -5750,9 +6042,10 @@
     "infoURL": "https://pepchain.io",
     "shortName": "tpep",
     "chainId": 13371337,
-    "networkId": 13371337
+    "networkId": 13371337,
+    "dexes": []
   },
-  {
+  "18289463": {
     "name": "IOLite",
     "chain": "ILT",
     "network": "mainnet",
@@ -5768,9 +6061,10 @@
     "infoURL": "https://iolite.io",
     "shortName": "ilt",
     "chainId": 18289463,
-    "networkId": 18289463
+    "networkId": 18289463,
+    "dexes": []
   },
-  {
+  "20181205": {
     "name": "quarkblockchain",
     "chain": "QKI",
     "network": "mainnet",
@@ -5787,9 +6081,10 @@
     "infoURL": "https://quarkblockchain.org/",
     "shortName": "qki",
     "chainId": 20181205,
-    "networkId": 20181205
+    "networkId": 20181205,
+    "dexes": []
   },
-  {
+  "28945486": {
     "name": "Auxilium Network Mainnet",
     "chain": "AUX",
     "network": "mainnet",
@@ -5806,9 +6101,10 @@
     "shortName": "auxi",
     "chainId": 28945486,
     "networkId": 28945486,
-    "slip44": 344
+    "slip44": 344,
+    "dexes": []
   },
-  {
+  "35855456": {
     "name": "Joys Digital Mainnet",
     "chain": "JOYS",
     "network": "mainnet",
@@ -5824,9 +6120,10 @@
     "infoURL": "https://joys.digital",
     "shortName": "JOYS",
     "chainId": 35855456,
-    "networkId": 35855456
+    "networkId": 35855456,
+    "dexes": []
   },
-  {
+  "61717561": {
     "name": "Aquachain",
     "chain": "AQUA",
     "network": "mainnet",
@@ -5846,9 +6143,10 @@
     "shortName": "aqua",
     "chainId": 61717561,
     "networkId": 61717561,
-    "slip44": 61717561
+    "slip44": 61717561,
+    "dexes": []
   },
-  {
+  "99415706": {
     "name": "Joys Digital TestNet",
     "chain": "TOYS",
     "network": "testnet",
@@ -5866,9 +6164,10 @@
     "infoURL": "https://joys.digital",
     "shortName": "TOYS",
     "chainId": 99415706,
-    "networkId": 99415706
+    "networkId": 99415706,
+    "dexes": []
   },
-  {
+  "192837465": {
     "name": "Gather Mainnet Network",
     "chain": "GTH",
     "network": "mainnet",
@@ -5891,9 +6190,10 @@
         "url": "https://explorer.gather.network/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "245022926": {
     "name": "Neon EVM DevNet",
     "chain": "Solana",
     "network": "devnet",
@@ -5911,9 +6211,10 @@
     "infoURL": "https://neon-labs.org/",
     "shortName": "neonevm-devnet",
     "chainId": 245022926,
-    "networkId": 245022926
+    "networkId": 245022926,
+    "dexes": []
   },
-  {
+  "245022934": {
     "name": "Neon EVM MainNet",
     "chain": "Solana",
     "network": "mainnet",
@@ -5929,9 +6230,10 @@
     "infoURL": "https://neon-labs.org/",
     "shortName": "neonevm-mainnet",
     "chainId": 245022934,
-    "networkId": 245022934
+    "networkId": 245022934,
+    "dexes": []
   },
-  {
+  "245022940": {
     "name": "Neon EVM TestNet",
     "chain": "Solana",
     "network": "testnet",
@@ -5947,9 +6249,10 @@
     "infoURL": "https://neon-labs.org/",
     "shortName": "neonevm-testnet",
     "chainId": 245022940,
-    "networkId": 245022940
+    "networkId": 245022940,
+    "dexes": []
   },
-  {
+  "311752642": {
     "name": "OneLedger Mainnet",
     "chain": "OLT",
     "network": "mainnet",
@@ -5973,9 +6276,10 @@
         "url": "https://mainnet-explorer.oneledger.network",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "356256156": {
     "name": "Gather Tesnet Network",
     "chain": "GTH",
     "network": "testnet",
@@ -5998,9 +6302,10 @@
         "url": "https://testnet-explorer.gather.network/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "486217935": {
     "name": "Gather Devnet Network",
     "chain": "GTH",
     "network": "devnet",
@@ -6023,9 +6328,10 @@
         "url": "https://devnet-explorer.gather.network/",
         "standard": "none"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "1122334455": {
     "name": "IPOS Network",
     "chain": "IPOS",
     "network": "mainnet",
@@ -6042,9 +6348,10 @@
     "infoURL": "https://iposlab.com",
     "shortName": "ipos",
     "chainId": 1122334455,
-    "networkId": 1122334455
+    "networkId": 1122334455,
+    "dexes": []
   },
-  {
+  "1313161554": {
     "name": "Aurora MainNet",
     "chain": "NEAR",
     "network": "mainnet",
@@ -6060,9 +6367,10 @@
     "infoURL": "https://aurora.dev",
     "shortName": "aurora",
     "chainId": 1313161554,
-    "networkId": 1313161554
+    "networkId": 1313161554,
+    "dexes": []
   },
-  {
+  "1313161555": {
     "name": "Aurora TestNet",
     "chain": "NEAR",
     "network": "testnet",
@@ -6078,9 +6386,10 @@
     "infoURL": "https://aurora.dev",
     "shortName": "aurora-testnet",
     "chainId": 1313161555,
-    "networkId": 1313161555
+    "networkId": 1313161555,
+    "dexes": []
   },
-  {
+  "1313161556": {
     "name": "Aurora BetaNet",
     "chain": "NEAR",
     "network": "betanet",
@@ -6096,9 +6405,10 @@
     "infoURL": "https://aurora.dev",
     "shortName": "aurora-betanet",
     "chainId": 1313161556,
-    "networkId": 1313161556
+    "networkId": 1313161556,
+    "dexes": []
   },
-  {
+  "1666600000": {
     "name": "Harmony Mainnet Shard 0",
     "chain": "Harmony",
     "network": "mainnet",
@@ -6123,9 +6433,12 @@
         "url": "https://explorer.harmony.one",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "1666600001": {
     "name": "Harmony Mainnet Shard 1",
     "chain": "Harmony",
     "network": "mainnet",
@@ -6141,9 +6454,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-s1",
     "chainId": 1666600001,
-    "networkId": 1666600001
+    "networkId": 1666600001,
+    "dexes": []
   },
-  {
+  "1666600002": {
     "name": "Harmony Mainnet Shard 2",
     "chain": "Harmony",
     "network": "mainnet",
@@ -6159,9 +6473,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-s2",
     "chainId": 1666600002,
-    "networkId": 1666600002
+    "networkId": 1666600002,
+    "dexes": []
   },
-  {
+  "1666600003": {
     "name": "Harmony Mainnet Shard 3",
     "chain": "Harmony",
     "network": "mainnet",
@@ -6177,9 +6492,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-s3",
     "chainId": 1666600003,
-    "networkId": 1666600003
+    "networkId": 1666600003,
+    "dexes": []
   },
-  {
+  "1666700000": {
     "name": "Harmony Testnet Shard 0",
     "chain": "Harmony",
     "network": "testnet",
@@ -6204,9 +6520,12 @@
         "url": "https://explorer.pops.one",
         "standard": "EIP3091"
       }
+    ],
+    "dexes": [
+      "sushiswap"
     ]
   },
-  {
+  "1666700001": {
     "name": "Harmony Testnet Shard 1",
     "chain": "Harmony",
     "network": "testnet",
@@ -6222,9 +6541,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-b-s1",
     "chainId": 1666700001,
-    "networkId": 1666700001
+    "networkId": 1666700001,
+    "dexes": []
   },
-  {
+  "1666700002": {
     "name": "Harmony Testnet Shard 2",
     "chain": "Harmony",
     "network": "testnet",
@@ -6240,9 +6560,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-b-s2",
     "chainId": 1666700002,
-    "networkId": 1666700002
+    "networkId": 1666700002,
+    "dexes": []
   },
-  {
+  "1666700003": {
     "name": "Harmony Testnet Shard 3",
     "chain": "Harmony",
     "network": "testnet",
@@ -6258,9 +6579,10 @@
     "infoURL": "https://www.harmony.one/",
     "shortName": "hmy-b-s3",
     "chainId": 1666700003,
-    "networkId": 1666700003
+    "networkId": 1666700003,
+    "dexes": []
   },
-  {
+  "3125659152": {
     "name": "Pirl",
     "chain": "PIRL",
     "network": "mainnet",
@@ -6277,9 +6599,10 @@
     "shortName": "pirl",
     "chainId": 3125659152,
     "networkId": 3125659152,
-    "slip44": 164
+    "slip44": 164,
+    "dexes": []
   },
-  {
+  "4216137055": {
     "name": "OneLedger Testnet Frankenstein",
     "chain": "OLT",
     "network": "testnet",
@@ -6305,9 +6628,10 @@
         "url": "https://frankenstein-explorer.oneledger.network",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "11297108099": {
     "name": "Palm Testnet",
     "chain": "Palm",
     "network": "testnet",
@@ -6321,9 +6645,10 @@
     "infoURL": "https://palm.io",
     "shortName": "tpalm",
     "chainId": 11297108099,
-    "networkId": 11297108099
+    "networkId": 11297108099,
+    "dexes": []
   },
-  {
+  "11297108109": {
     "name": "Palm Mainnet",
     "chain": "Palm",
     "network": "mainnet",
@@ -6337,9 +6662,12 @@
     "infoURL": "https://palm.io",
     "shortName": "palm",
     "chainId": 11297108109,
-    "networkId": 11297108109
+    "networkId": 11297108109,
+    "dexes": [
+      "sushiswap"
+    ]
   },
-  {
+  "197710212030": {
     "name": "Ntity Mainnet",
     "chain": "Ntity",
     "network": "mainnet",
@@ -6364,9 +6692,10 @@
         "icon": "ntity",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "197710212031": {
     "name": "Haradev Testnet",
     "chain": "Ntity",
     "network": "testnet",
@@ -6391,9 +6720,10 @@
         "icon": "ntity",
         "standard": "EIP3091"
       }
-    ]
+    ],
+    "dexes": []
   },
-  {
+  "6022140761023": {
     "name": "Molereum Network",
     "chain": "ETH",
     "network": "molereum",
@@ -6409,6 +6739,7 @@
     "infoURL": "https://github.com/Jdubedition/molereum",
     "shortName": "mole",
     "chainId": 6022140761023,
-    "networkId": 6022140761023
+    "networkId": 6022140761023,
+    "dexes": []
   }
-]
+}
