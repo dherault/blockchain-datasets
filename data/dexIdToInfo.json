@@ -1,0 +1,8 @@
+{
+  "sushiswap": {
+    "name": "SushiSwap",
+    "url": "https://sushi.com",
+    "contractsRepositoryUrl": "https://github.com/sushiswap/sushiswap",
+    "contractsRepositoryGitUrl": "git@github.com:sushiswap/sushiswap.git"
+  }
+}
