@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.1
+
+- Include `data` folder in the package
+
+## v3.0.0
+
 ## v3.0.0
 
 - Removed most files
