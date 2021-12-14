@@ -37,6 +37,8 @@ async function build() {
     https://chainid.network/chains.json
   --- */
 
+  console.log('Parsing https://chainid.network/chains.json')
+
   const allChains = (await axios.get('https://chainid.network/chains.json')).data
 
   /* ---
@@ -172,7 +174,7 @@ function correctBlockchainName(name) {
 }
 
 function getBuildLocation(x) {
-  return path.resolve(__dirname, 'build', x)
+  return path.resolve(__dirname, 'data', x)
 }
 
 function saveJson(path, json) {
