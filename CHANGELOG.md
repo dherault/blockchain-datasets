@@ -1,5 +1,10 @@
 # Changelog
 
+## v4.0.0
+
+- Add per-dex folder under `dexes`
+- Remove `chainIdToDexIdToContractNameToContractInfo.json` and `dexIdToChainIdToContractNameToContractInfo.json`
+
 ## v3.1.4
 
 - Fix sushiswap pair abi

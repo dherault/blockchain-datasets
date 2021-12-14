@@ -5,6 +5,7 @@ const del = require('del')
 const tmp = require('tmp-promise')
 const clone = require('git-clone/promise')
 const axios = require('axios')
+const { ObjectFlags } = require('typescript')
 
 const aliases = {
   bsc: ['bsc_mainnet'],
@@ -14,7 +15,7 @@ const aliases = {
 }
 
 async function build() {
-  await del(getBuildLocation('**/*.json'))
+  await del(getBuildLocation('*'))
 
   const blockchainIdToTokens = {}
   const dexIdToInfo = {
@@ -206,9 +207,20 @@ async function build() {
 
   saveJson(getBuildLocation('allChains.json'), allChains)
   saveJson(getBuildLocation('dexIdToInfo.json'), dexIdToInfo)
-  saveJson(getBuildLocation('dexIdToChainIdToContractNameToContractInfo.json'), dexIdToChainIdToContractNameToContractInfo)
-  saveJson(getBuildLocation('chainIdToDexIdToContractNameToContractInfo.json'), chainIdToDexIdToContractNameToContractInfo)
 
+  Object.entries(dexIdToChainIdToContractNameToContractInfo).forEach(([dexId, chainIdToContractNameToContractInfo]) => {
+    Object.entries(chainIdToContractNameToContractInfo).forEach(([chainId, contractNameToContractInfo]) => {
+      createDirectory(getBuildLocation(`dexes/${dexId}/contracts`))
+      saveJson(getBuildLocation(`dexes/${dexId}/contracts/${chainId}.json`), contractNameToContractInfo)
+    })
+  })
+
+  Object.entries(dexIdToInfo).forEach(([dexId, info]) => {
+    createDirectory(getBuildLocation(`dexes/${dexId}`))
+    saveJson(getBuildLocation(`dexes/${dexId}/info.json`), info)
+  })
+
+  createDirectory(getBuildLocation('tokens'))
   Object.entries(blockchainIdToTokens)
   .forEach(([blockchainId, tokens]) => {
     saveJson(getBuildLocation(`tokens/${blockchainId}.json`), tokens)
@@ -234,6 +246,10 @@ function getBuildLocation(x) {
 
 function saveJson(path, json) {
   fs.writeFileSync(path, JSON.stringify(json, null, 2), 'utf8')
+}
+
+function createDirectory(path) {
+  fs.mkdirSync(path, { recursive: true })
 }
 
 build()
