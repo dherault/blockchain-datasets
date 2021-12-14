@@ -4,6 +4,7 @@ const path = require('path')
 const del = require('del')
 const tmp = require('tmp-promise')
 const clone = require('git-clone/promise')
+const axios = require('axios')
 const tsFileStruct = require('ts-file-parser')
 
 const aliases = {
@@ -31,6 +32,12 @@ async function build() {
     sushiswap: 'UniswapV2Router02.json',
     fatex: 'UniswapV2Router02.json',
   }
+
+  /* ---
+    https://chainid.network/chains.json
+  --- */
+
+  const allChains = (await axios.get('https://chainid.network/chains.json')).data
 
   /* ---
     sushiswap/default-token-list
@@ -137,6 +144,7 @@ async function build() {
     save
   --- */
 
+  saveJson(getBuildLocation('allChains.json'), allChains)
   saveJson(getBuildLocation('blockchainIdToTokens.json'), blockchainIdToTokens)
   saveJson(getBuildLocation('blockchainNameToChainId.json'), blockchainNameToChainId)
   saveJson(getBuildLocation('chainIdToBlockchainName.json'), chainIdToBlockchainName)
