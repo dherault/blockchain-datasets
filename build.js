@@ -58,7 +58,7 @@ async function build() {
   await clone(dexIdToInfo.sushiswap.contractsRepositoryGitUrl, tmpDir.path)
 
   const defaultContractNameToContractInfo = {
-    pair: {
+    UniswapV2Pair: {
       address: 'depends on the pair',
       abi: require('./inputs/UniswapV2Pair.abi.json'),
     },
