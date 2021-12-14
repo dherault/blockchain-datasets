@@ -1,8 +1,11 @@
-# Ultimate Token, Blockchain, Dex list
+# The Ultimate Blockchains, Tokens and Dexes Data Source
 
-Any token, any blockchain, any dex.
+This library is an aggregation of blockchain-related data including:
+- Blockchains data
+- ERC20 Tokens data
+- Dexes data, including contracts locations
 
-Will grow some more hopefully.
+The project is immature and will grow some more hopefully.
 
 [NPM](https://www.npmjs.com/package/ultimate-token-list)
 
