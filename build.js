@@ -24,6 +24,7 @@ async function build() {
       contractsRepositoryUrl: 'https://github.com/sushiswap/sushiswap',
       contractsRepositoryGitUrl: 'git@github.com:sushiswap/sushiswap.git',
       contractTypeToContractName: {
+        pair: 'UniswapV2Pair',
         factory: 'UniswapV2Factory',
         router: 'UniswapV2Router02',
       },

@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.2
+
+- Add sushiswap `dexIdToInfo.sushiswap.contractTypeToContractName.pair`
+
 ## v3.1.1
 
 - Add sushiswap `dexIdToInfo.sushiswap.contractTypeToContractName`
