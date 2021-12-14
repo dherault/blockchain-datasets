@@ -29,6 +29,7 @@ async function build() {
     sushiswap: {},
     fatex: {},
   }
+  const chainIdToDexIdToContractNameToContractInfo = {}
 
   /* ---
     https://chainid.network/chains.json
@@ -61,6 +62,12 @@ async function build() {
     if (fs.lstatSync(path.join(smartContractsDeploymentsLocation, folder)).isDirectory()) {
       const chainId = fs.readFileSync(path.join(smartContractsDeploymentsLocation, folder, '.chainId'), 'utf8')
 
+      if (!chainIdToDexIdToContractNameToContractInfo[chainId]) {
+        chainIdToDexIdToContractNameToContractInfo[chainId] = {}
+      }
+
+      chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap = {}
+
       fs.readdirSync(path.join(smartContractsDeploymentsLocation, folder))
       .filter(file => file.endsWith('.json'))
       .forEach(file => {
@@ -73,11 +80,18 @@ async function build() {
           console.log('Error parsing sushiswap/suhsiswap JSON', file)
         }
 
+        const contractName = file.replace('.json', '')
+
         if (!dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId]) {
           dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId] = {}
         }
 
-        dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId][file.replace('.json', '')] = {
+        dexIdToChainIdToContractNameToContractInfo.sushiswap[chainId][contractName] = {
+          address: json.address,
+          abi: json.abi,
+        }
+
+        chainIdToDexIdToContractNameToContractInfo[chainId].sushiswap[contractName] = {
           address: json.address,
           abi: json.abi,
         }
@@ -182,6 +196,7 @@ async function build() {
   saveJson(getBuildLocation('allChains.json'), allChains)
   saveJson(getBuildLocation('dexIdToInfo.json'), dexIdToInfo)
   saveJson(getBuildLocation('dexIdToChainIdToContractNameToContractInfo.json'), dexIdToChainIdToContractNameToContractInfo)
+  saveJson(getBuildLocation('chainIdToDexIdToContractNameToContractInfo.json'), chainIdToDexIdToContractNameToContractInfo)
 
   Object.entries(blockchainIdToTokens)
   .forEach(([blockchainId, tokens]) => {

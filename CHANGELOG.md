@@ -1,10 +1,12 @@
 # Changelog
 
+## v3.1.0
+
+- Add `chainIdToDexIdToContractNameToContractInfo.json`
+
 ## v3.0.1
 
 - Include `data` folder in the package
-
-## v3.0.0
 
 ## v3.0.0
 
