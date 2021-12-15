@@ -1,6 +1,6 @@
 {
   "name": "ultimate-token-list",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "Any token, any blockchain, any dex.",
   "main": "build/blockchainIdToTokens.json",
   "scripts": {
@@ -37,7 +37,6 @@
     "git-clone": "^0.2.0",
     "nodemon": "^2.0.15",
     "tmp-promise": "^3.0.3",
-    "ts-file-parser": "^0.0.21",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
   }

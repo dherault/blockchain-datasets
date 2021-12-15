@@ -53,10 +53,6 @@ async function parseContracts(data, dexId) {
 
         const contractName = file.replace('.json', '')
 
-        if (dexId === 'fatex' && chainId === '1666600000') {
-          console.log('', contractName, json.address)
-        }
-
         data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId][contractName] = {
           address: json.address,
           abi: json.abi,
