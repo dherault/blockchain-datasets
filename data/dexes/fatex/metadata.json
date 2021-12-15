@@ -1,0 +1,13 @@
+{
+  "id": "fatex",
+  "name": "FATEx",
+  "url": "https://fatex.io",
+  "tokensGitUrl": "git@github.com:FATEx-DAO/default-token-list.git",
+  "tokensLocation": "src/tokens",
+  "contractsGitUrl": "git@github.com:FATEx-DAO/fatex-dex-protocol.git",
+  "contractTypeToContractName": {
+    "pair": "UniswapV2Pair",
+    "factory": "UniswapV2Factory",
+    "router": "UniswapV2Router02"
+  }
+}

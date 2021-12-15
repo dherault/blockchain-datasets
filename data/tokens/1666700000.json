@@ -1,5 +1,5 @@
-[
-  {
+{
+  "0x7a2afac38517d512E55C0bCe3b6805c10a04D60F": {
     "name": "Wrapped ONE",
     "address": "0x7a2afac38517d512E55C0bCe3b6805c10a04D60F",
     "symbol": "WONE",
@@ -7,7 +7,7 @@
     "chainId": 1666700000,
     "logoURI": "https://assets.coingecko.com/coins/images/4344/small/Y88JAze.png"
   },
-  {
+  "0x0E80905676226159cC3FF62B1876C907C91F7395": {
     "chainId": 1666700000,
     "address": "0x0E80905676226159cC3FF62B1876C907C91F7395",
     "symbol": "1BUSD",
@@ -15,7 +15,7 @@
     "decimals": 18,
     "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
   },
-  {
+  "0x6c4387C4f570Aa8cAdcaFFc5E73ecb3D0F8Fc593": {
     "chainId": 1666700000,
     "address": "0x6c4387C4f570Aa8cAdcaFFc5E73ecb3D0F8Fc593",
     "symbol": "WBTC",
@@ -23,7 +23,7 @@
     "decimals": 8,
     "logoURI": "https://assets.coingecko.com/coins/images/7598/small/wrapped_bitcoin_wbtc.png"
   },
-  {
+  "0x1E120B3b4aF96e7F394ECAF84375b1C661830013": {
     "chainId": 1666700000,
     "address": "0x1E120B3b4aF96e7F394ECAF84375b1C661830013",
     "symbol": "1ETH",
@@ -31,12 +31,44 @@
     "decimals": 18,
     "logoURI": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"
   },
-  {
+  "0x2C6e26B2faD89bc52d043e78E3D980A08af0Ce88": {
     "chainId": 1666700000,
     "address": "0x2C6e26B2faD89bc52d043e78E3D980A08af0Ce88",
     "symbol": "1LINK",
     "name": "OneChainlink",
     "decimals": 18,
     "logoURI": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png"
+  },
+  "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2": {
+    "chainId": 1666700000,
+    "address": "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2",
+    "symbol": "WONE",
+    "name": "Wrapped ONE",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/4344/small/Y88JAze.png"
+  },
+  "0xDeC283184034d06422bEa74cc93275B67eB73D0e": {
+    "chainId": 1666700000,
+    "address": "0xDeC283184034d06422bEa74cc93275B67eB73D0e",
+    "symbol": "1BUSD",
+    "name": "OneBUSD",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
+  },
+  "0xB2e2650DFdb7b2DEc4a4455a375ffBfD926cE5FC": {
+    "chainId": 1666700000,
+    "address": "0xB2e2650DFdb7b2DEc4a4455a375ffBfD926cE5FC",
+    "symbol": "FATE",
+    "name": "FATExDAO Token",
+    "decimals": 18,
+    "logoURI": "https://fatex.io/fatex-token-logo.png"
+  },
+  "0x6f4078cb47438157c914409d10358a0Cf4b06AB7": {
+    "chainId": 1666700000,
+    "address": "0x6f4078cb47438157c914409d10358a0Cf4b06AB7",
+    "symbol": "xFATE",
+    "name": "xFATExDAO Token",
+    "decimals": 18,
+    "logoURI": "https://fatex.io/fatex-token-logo.png"
   }
-]
+}

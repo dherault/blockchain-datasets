@@ -2,8 +2,8 @@
 
 ## v5.0.0
 
-- Remove `allChains.json`
-- Add `chainIdToChainMetadata.json`
+- Complete rework
+- Add fatex
 
 ## v4.1.0
 

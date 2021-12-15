@@ -1,0 +1,170 @@
+{
+  "0xB2e2650DFdb7b2DEc4a4455a375ffBfD926cE5FC": {
+    "chainId": 1666600000,
+    "address": "0xB2e2650DFdb7b2DEc4a4455a375ffBfD926cE5FC",
+    "symbol": "FATE",
+    "name": "FATExDAO Token",
+    "decimals": 18,
+    "logoURI": "https://fatex.io/fatex-token-logo.png"
+  },
+  "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a": {
+    "chainId": 1666600000,
+    "address": "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a",
+    "symbol": "WONE",
+    "name": "Wrapped ONE",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/4344/small/Y88JAze.png"
+  },
+  "0x985458E523dB3d53125813eD68c274899e9DfAb4": {
+    "chainId": 1666600000,
+    "address": "0x985458E523dB3d53125813eD68c274899e9DfAb4",
+    "symbol": "1USDC",
+    "name": "USD Coin",
+    "decimals": 6,
+    "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png"
+  },
+  "0xE176EBE47d621b984a73036B9DA5d834411ef734": {
+    "chainId": 1666600000,
+    "address": "0xE176EBE47d621b984a73036B9DA5d834411ef734",
+    "symbol": "BUSD",
+    "name": "Binance USD",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
+  },
+  "0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f": {
+    "chainId": 1666600000,
+    "address": "0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f",
+    "symbol": "1USDT",
+    "name": "Tether USD",
+    "decimals": 6,
+    "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether-logo.png"
+  },
+  "0xEf977d2f931C1978Db5F6747666fa1eACB0d0339": {
+    "chainId": 1666600000,
+    "address": "0xEf977d2f931C1978Db5F6747666fa1eACB0d0339",
+    "symbol": "1DAI",
+    "name": "Dai Stablecoin",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9956/small/dai-multi-collateral-mcd.png"
+  },
+  "0x3095c7557bCb296ccc6e363DE01b760bA031F2d9": {
+    "chainId": 1666600000,
+    "address": "0x3095c7557bCb296ccc6e363DE01b760bA031F2d9",
+    "symbol": "1WBTC",
+    "name": "Wrapped BTC",
+    "decimals": 8,
+    "logoURI": "https://assets.coingecko.com/coins/images/7598/small/wrapped_bitcoin_wbtc.png"
+  },
+  "0x6983D1E6DEf3690C4d616b13597A09e6193EA013": {
+    "chainId": 1666600000,
+    "address": "0x6983D1E6DEf3690C4d616b13597A09e6193EA013",
+    "symbol": "1ETH",
+    "name": "Ether",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"
+  },
+  "0x218532a12a389a4a92fC0C5Fb22901D1c19198aA": {
+    "chainId": 1666600000,
+    "address": "0x218532a12a389a4a92fC0C5Fb22901D1c19198aA",
+    "symbol": "LINK",
+    "name": "ChainLink Token",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png"
+  },
+  "0x0aB43550A6915F9f67d0c454C2E90385E6497EaA": {
+    "chainId": 1666600000,
+    "address": "0x0aB43550A6915F9f67d0c454C2E90385E6497EaA",
+    "symbol": "bscBUSD",
+    "name": "BUSD Token",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
+  },
+  "0xb1f6E61E1e113625593a22fa6aa94F8052bc39E0": {
+    "chainId": 1666600000,
+    "address": "0xb1f6E61E1e113625593a22fa6aa94F8052bc39E0",
+    "symbol": "bscBNB",
+    "name": "BNB",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/825/small/binance-coin-logo.png"
+  },
+  "0x7aFB0E2ebA6Dc938945FE0f42484d3b8F442D0AC": {
+    "chainId": 1666600000,
+    "address": "0x7aFB0E2ebA6Dc938945FE0f42484d3b8F442D0AC",
+    "symbol": "1PAXG",
+    "name": "PAX Gold",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9519/small/paxg.PNG"
+  },
+  "0x224e64ec1BDce3870a6a6c777eDd450454068FEC": {
+    "chainId": 1666600000,
+    "address": "0x224e64ec1BDce3870a6a6c777eDd450454068FEC",
+    "symbol": "UST",
+    "name": "TerraUSD",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/12681/small/UST.png?1601612407"
+  },
+  "0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A": {
+    "chainId": 1666600000,
+    "address": "0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A",
+    "symbol": "1SUSHI",
+    "name": "SushiToken",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/harmony/assets/0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A/logo.png"
+  },
+  "0x6f4078cb47438157c914409d10358a0Cf4b06AB7": {
+    "chainId": 1666600000,
+    "address": "0x6f4078cb47438157c914409d10358a0Cf4b06AB7",
+    "symbol": "xFATE",
+    "name": "xFATExDAO Token",
+    "decimals": 18,
+    "logoURI": "https://fatex.io/fatex-token-logo.png"
+  },
+  "0xb12c13e66AdE1F72f71834f2FC5082Db8C091358": {
+    "chainId": 1666600000,
+    "address": "0xb12c13e66AdE1F72f71834f2FC5082Db8C091358",
+    "symbol": "AVAX",
+    "name": "Avalanche",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/12559/small/coin-round-red.png?1604021818"
+  },
+  "0xFbdd194376de19a88118e84E279b977f165d01b8": {
+    "chainId": 1666600000,
+    "address": "0xFbdd194376de19a88118e84E279b977f165d01b8",
+    "symbol": "WMATIC",
+    "name": "Wrapped Matic",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png?1624446912"
+  },
+  "0x735aBE48e8782948a37C7765ECb76b98CdE97B0F": {
+    "chainId": 1666600000,
+    "address": "0x735aBE48e8782948a37C7765ECb76b98CdE97B0F",
+    "symbol": "FTM",
+    "name": "Fantom",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/4001/small/Fantom.png?1558015016"
+  },
+  "0x95CE547D730519A90dEF30d647F37D9E5359B6Ae": {
+    "chainId": 1666600000,
+    "address": "0x95CE547D730519A90dEF30d647F37D9E5359B6Ae",
+    "symbol": "LUNA",
+    "name": "Wrapped LUNA Token",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/8284/small/luna1557227471663.png?1567147072"
+  },
+  "0x72Cb10C6bfA5624dD07Ef608027E366bd690048F": {
+    "chainId": 1666600000,
+    "address": "0x72Cb10C6bfA5624dD07Ef608027E366bd690048F",
+    "symbol": "JEWEL",
+    "name": "DeFi Kingdoms",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/18570/small/fAisLIV.png?1632449282"
+  },
+  "0x88B0811DdeC7c94Cc48dE601BdAbd1AC37d6940B": {
+    "chainId": 1666600000,
+    "address": "0x88B0811DdeC7c94Cc48dE601BdAbd1AC37d6940B",
+    "symbol": "bscLINK",
+    "name": "Chainlink",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png"
+  }
+}
