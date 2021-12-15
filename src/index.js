@@ -39,6 +39,10 @@ async function build() {
         },
       },
     },
+    abiNameToAbi: {
+      ERC20: require(path.resolve(__dirname, '../inputs/ERC20.abi.json')),
+      UniswapV2Pair: require(path.resolve(__dirname, '../inputs/UniswapV2Pair.abi.json')),
+    },
     // chainNameToChainId: {},
     chainIdToTokenAddressToTokenMetadata: {},
     dexIdToChainIdToContractNameToContractInfo: {},
@@ -112,6 +116,11 @@ async function build() {
   Object.entries(data.chainIdToTokenAddressToTokenMetadata)
   .forEach(([blockchainId, tokens]) => {
     saveJson(getBuildLocation(`tokens/${blockchainId}.json`), tokens)
+  })
+
+  Object.entries(data.abiNameToAbi).forEach(([abiName, abi]) => {
+    createDirectory(getBuildLocation('abis'))
+    saveJson(getBuildLocation(`abis/${abiName}.json`), abi)
   })
 }
 

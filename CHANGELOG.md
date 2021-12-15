@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.1.0
+
+- Add `abi` directory
+- Add ERC20 ABI
+
 ## v5.0.0
 
 - Complete rework

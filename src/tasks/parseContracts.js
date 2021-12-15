@@ -16,7 +16,7 @@ async function parseContracts(data, dexId) {
   const defaultContractNameToContractInfo = {
     UniswapV2Pair: {
       address: 'depends on the pair',
-      abi: require('../../inputs/UniswapV2Pair.abi.json'),
+      abi: data.abiNameToAbi.UniswapV2Pair,
     },
   }
 
