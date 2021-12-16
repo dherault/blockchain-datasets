@@ -1,0 +1,18 @@
+{
+  "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83": {
+    "name": "USDC on xDai",
+    "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83",
+    "symbol": "USDC",
+    "decimals": 6,
+    "chainId": 100,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdc.jpg"
+  },
+  "0x4ECaBa5870353805a9F068101A40E0f32ed605C6": {
+    "name": "Tether on xDai",
+    "address": "0x4ECaBa5870353805a9F068101A40E0f32ed605C6",
+    "symbol": "USDT",
+    "decimals": 6,
+    "chainId": 100,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdt.jpg"
+  }
+}

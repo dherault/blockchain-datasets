@@ -1,0 +1,34 @@
+{
+  "0xE176EBE47d621b984a73036B9DA5d834411ef734": {
+    "chainId": 1666600000,
+    "address": "0xE176EBE47d621b984a73036B9DA5d834411ef734",
+    "symbol": "BUSD",
+    "name": "Binance USD",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/busd.jpg"
+  },
+  "0xEf977d2f931C1978Db5F6747666fa1eACB0d0339": {
+    "chainId": 1666600000,
+    "address": "0xEf977d2f931C1978Db5F6747666fa1eACB0d0339",
+    "symbol": "DAI",
+    "name": "Dai Stablecoin",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/dai.jpg"
+  },
+  "0x985458E523dB3d53125813eD68c274899e9DfAb4": {
+    "chainId": 1666600000,
+    "address": "0x985458E523dB3d53125813eD68c274899e9DfAb4",
+    "symbol": "USDC",
+    "name": "USD Coin",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdc.jpg"
+  },
+  "0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f": {
+    "chainId": 1666600000,
+    "address": "0x3C2B8Be99c50593081EAA2A724F0B8285F5aba8f",
+    "symbol": "USDT",
+    "name": "Tether USD",
+    "decimals": 6,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdt.jpg"
+  }
+}

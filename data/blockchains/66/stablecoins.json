@@ -1,0 +1,26 @@
+{
+  "0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85": {
+    "name": "USDC",
+    "address": "0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85",
+    "symbol": "USDC",
+    "decimals": 18,
+    "chainId": 66,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdc.jpg"
+  },
+  "0x382bB369d343125BfB2117af9c149795C6C65C50": {
+    "name": "USDT",
+    "address": "0x382bB369d343125BfB2117af9c149795C6C65C50",
+    "symbol": "USDT",
+    "decimals": 18,
+    "chainId": 66,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/usdt.jpg"
+  },
+  "0x21cDE7E32a6CAF4742d00d44B07279e7596d26B9": {
+    "name": "DAI",
+    "address": "0x21cDE7E32a6CAF4742d00d44B07279e7596d26B9",
+    "symbol": "DAI",
+    "decimals": 18,
+    "chainId": 66,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/dai.jpg"
+  }
+}

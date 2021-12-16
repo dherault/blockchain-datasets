@@ -5,6 +5,7 @@
 This library is an aggregation of blockchain-related data including:
 - Blockchains data
 - ERC20 Tokens data
+- Stablecoins data
 - Dexes data, including contracts addresses and ABIs
 
 The project is immature and will grow some more hopefully.

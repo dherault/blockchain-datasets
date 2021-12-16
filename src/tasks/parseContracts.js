@@ -29,11 +29,11 @@ async function parseContracts(data, dexId) {
     if (fs.lstatSync(path.join(smartContractsDeploymentsLocation, folder)).isDirectory()) {
       const chainId = fs.readFileSync(path.join(smartContractsDeploymentsLocation, folder, '.chainId'), 'utf8')
 
-      if (!data.blockchainIdToDexIds[chainId]) {
-        data.blockchainIdToDexIds[chainId] = []
+      if (!data.chainIdToDexIds[chainId]) {
+        data.chainIdToDexIds[chainId] = []
       }
 
-      data.blockchainIdToDexIds[chainId].push(dexMetadata.id)
+      data.chainIdToDexIds[chainId].push(dexMetadata.id)
 
       if (!data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId]) {
         data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId] = { ...defaultContractNameToContractInfo }

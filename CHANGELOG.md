@@ -1,5 +1,10 @@
 # Changelog
 
+## v6.0.0
+
+- Rework `blockchains` directory
+- Add stablecoins
+
 ## v5.1.0
 
 - Add `abi` directory

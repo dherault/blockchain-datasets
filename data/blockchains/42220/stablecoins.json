@@ -1,0 +1,34 @@
+{
+  "0x765DE816845861e75A25fCA122bb6898B8B1282a": {
+    "address": "0x765DE816845861e75A25fCA122bb6898B8B1282a",
+    "name": "Celo Dollar",
+    "symbol": "cUSD",
+    "decimals": 18,
+    "chainId": 42220,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/cusd.jpg"
+  },
+  "0xef4229c8c3250C675F21BCefa42f58EfbfF6002a": {
+    "name": "Optics USDC v2",
+    "address": "0xef4229c8c3250C675F21BCefa42f58EfbfF6002a",
+    "symbol": "USDC",
+    "decimals": 6,
+    "chainId": 42220,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/celo/assets/0xef4229c8c3250C675F21BCefa42f58EfbfF6002a/logo.png"
+  },
+  "0x88eeC49252c8cbc039DCdB394c0c2BA2f1637EA0": {
+    "name": "Optics USDT v2",
+    "address": "0x88eeC49252c8cbc039DCdB394c0c2BA2f1637EA0",
+    "symbol": "USDT",
+    "decimals": 6,
+    "chainId": 42220,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/celo/assets/0x88eeC49252c8cbc039DCdB394c0c2BA2f1637EA0/logo.png"
+  },
+  "0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd": {
+    "name": "Optics Dai v2",
+    "address": "0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd",
+    "symbol": "DAI",
+    "decimals": 18,
+    "chainId": 42220,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/celo/assets/0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd/logo.png"
+  }
+}
