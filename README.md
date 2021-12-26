@@ -12,7 +12,7 @@ The project is immature and will grow some more hopefully.
 
 ## Where is the data?
 
-Look under the [`data` folder](https://github.com/dherault/ultimate-token-list/tree/main/data).
+Look under the [`data` directory](https://github.com/dherault/ultimate-token-list/tree/main/data).
 
 ## Contributing
 

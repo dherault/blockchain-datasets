@@ -23,5 +23,6 @@
       "standard": "none"
     }
   ],
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -13,5 +13,6 @@
   "shortName": "maca",
   "chainId": 595,
   "networkId": 595,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

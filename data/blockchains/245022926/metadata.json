@@ -17,5 +17,6 @@
   "shortName": "neonevm-devnet",
   "chainId": 245022926,
   "networkId": 245022926,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

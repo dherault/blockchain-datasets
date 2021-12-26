@@ -15,5 +15,6 @@
   "shortName": "dbm",
   "chainId": 67,
   "networkId": 67,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

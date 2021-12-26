@@ -16,5 +16,6 @@
     "symbol": "tPLS",
     "decimals": 18
   },
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

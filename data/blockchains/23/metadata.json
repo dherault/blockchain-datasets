@@ -13,5 +13,6 @@
   "shortName": "eladidt",
   "chainId": 23,
   "networkId": 23,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

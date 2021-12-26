@@ -18,5 +18,6 @@
   "shortName": "tao",
   "chainId": 558,
   "networkId": 558,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

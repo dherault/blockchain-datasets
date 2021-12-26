@@ -16,5 +16,6 @@
   "shortName": "fsn",
   "chainId": 32659,
   "networkId": 32659,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

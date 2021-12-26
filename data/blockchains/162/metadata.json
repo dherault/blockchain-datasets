@@ -17,5 +17,6 @@
   "shortName": "tpht",
   "chainId": 162,
   "networkId": 162,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

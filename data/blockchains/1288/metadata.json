@@ -13,5 +13,6 @@
   "shortName": "mshadow",
   "chainId": 1288,
   "networkId": 1288,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

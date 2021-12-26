@@ -6,6 +6,7 @@ const axios = require('axios')
 
 const parseContracts = require('./tasks/parseContracts')
 const parseTokens = require('./tasks/parseTokens')
+const parseSushiswapWrappedNativeTokens = require('./tasks/parseSushiswapWrappedNativeTokens')
 
 async function build() {
   await del(getBuildLocation('*'))
@@ -18,6 +19,7 @@ async function build() {
         url: 'https://sushi.com',
         tokensGitUrl: 'git@github.com:sushiswap/default-token-list.git',
         tokensLocation: 'tokens',
+        sdkGitUrl: 'git@github.com:sushiswap/sushiswap-sdk.git',
         contractsGitUrl: 'git@github.com:sushiswap/sushiswap.git',
         contractTypeToContractName: {
           pair: 'UniswapV2Pair',
@@ -52,6 +54,7 @@ async function build() {
     dexIdToChainIdToContractNameToContractInfo: {},
     chainIdToDexIds: {},
     chainIdToChainMetadata: {},
+    chainIdToWrappedNativeTokenAddress: {},
   }
 
   /* ---
@@ -68,6 +71,7 @@ async function build() {
 
   await parseContracts(data, 'sushiswap')
   await parseTokens(data, 'sushiswap')
+  await parseSushiswapWrappedNativeTokens(data)
 
   /* ---
     fatex
@@ -83,6 +87,7 @@ async function build() {
   chainInfos.forEach(chainInfo => {
     data.chainIdToChainMetadata[chainInfo.chainId] = chainInfo
     data.chainIdToChainMetadata[chainInfo.chainId].dexes = data.chainIdToDexIds[chainInfo.chainId] || []
+    data.chainIdToChainMetadata[chainInfo.chainId].wrappedNativeTokenAddress = data.chainIdToWrappedNativeTokenAddress[chainInfo.chainId] || null
   })
 
   Object.entries(data.chainIdToTokenAddressToTokenMetadata)

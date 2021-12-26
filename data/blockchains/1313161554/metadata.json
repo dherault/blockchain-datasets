@@ -15,5 +15,6 @@
   "shortName": "aurora",
   "chainId": 1313161554,
   "networkId": 1313161554,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

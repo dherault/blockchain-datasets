@@ -24,5 +24,6 @@
       "standard": "EIP3091"
     }
   ],
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

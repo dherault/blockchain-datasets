@@ -13,5 +13,6 @@
   "shortName": "tetc",
   "chainId": 62,
   "networkId": 2,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

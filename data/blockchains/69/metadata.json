@@ -15,5 +15,6 @@
   "shortName": "okov",
   "chainId": 69,
   "networkId": 69,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

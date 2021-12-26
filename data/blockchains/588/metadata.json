@@ -31,5 +31,6 @@
       }
     ]
   },
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

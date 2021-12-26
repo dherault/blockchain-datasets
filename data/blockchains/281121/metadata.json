@@ -16,5 +16,6 @@
   "chainId": 281121,
   "networkId": 281121,
   "explorers": [],
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

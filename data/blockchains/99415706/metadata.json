@@ -17,5 +17,6 @@
   "shortName": "TOYS",
   "chainId": 99415706,
   "networkId": 99415706,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

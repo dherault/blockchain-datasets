@@ -15,5 +15,6 @@
   "networkId": 11297108109,
   "dexes": [
     "sushiswap"
-  ]
+  ],
+  "wrappedNativeTokenAddress": "0xF98cABF0a963452C5536330408B2590567611a71"
 }

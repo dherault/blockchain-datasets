@@ -13,5 +13,6 @@
   "shortName": "flr",
   "chainId": 14,
   "networkId": 14,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

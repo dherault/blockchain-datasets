@@ -17,5 +17,6 @@
   "shortName": "spark",
   "chainId": 123,
   "networkId": 123,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

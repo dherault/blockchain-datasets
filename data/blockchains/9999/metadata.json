@@ -15,5 +15,6 @@
   "shortName": "myn",
   "chainId": 9999,
   "networkId": 9999,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

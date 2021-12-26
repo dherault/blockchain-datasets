@@ -15,5 +15,6 @@
   "shortName": "GooDT",
   "chainId": 32,
   "networkId": 32,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

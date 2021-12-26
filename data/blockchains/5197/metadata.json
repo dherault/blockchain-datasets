@@ -17,5 +17,6 @@
   "shortName": "es",
   "chainId": 5197,
   "networkId": 5197,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

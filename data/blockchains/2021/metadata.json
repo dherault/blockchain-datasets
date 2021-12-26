@@ -15,5 +15,6 @@
   "shortName": "edg",
   "chainId": 2021,
   "networkId": 2021,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

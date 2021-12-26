@@ -17,5 +17,6 @@
   "shortName": "Telos EVM Testnet",
   "chainId": 41,
   "networkId": 41,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

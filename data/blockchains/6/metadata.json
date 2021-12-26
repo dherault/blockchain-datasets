@@ -13,5 +13,6 @@
   "shortName": "kot",
   "chainId": 6,
   "networkId": 6,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

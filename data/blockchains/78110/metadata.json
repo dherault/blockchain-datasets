@@ -15,5 +15,6 @@
   "shortName": "firenze",
   "chainId": 78110,
   "networkId": 78110,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

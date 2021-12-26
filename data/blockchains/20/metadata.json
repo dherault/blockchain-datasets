@@ -15,5 +15,6 @@
   "shortName": "elaeth",
   "chainId": 20,
   "networkId": 20,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

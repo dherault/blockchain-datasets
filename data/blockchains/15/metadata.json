@@ -16,5 +16,6 @@
   "shortName": "diode",
   "chainId": 15,
   "networkId": 15,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

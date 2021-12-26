@@ -18,5 +18,6 @@
   "shortName": "vt",
   "chainId": 73799,
   "networkId": 73799,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

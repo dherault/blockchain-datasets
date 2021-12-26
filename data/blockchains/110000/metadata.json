@@ -15,5 +15,6 @@
   "shortName": "qkc-d-r",
   "chainId": 110000,
   "networkId": 110000,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

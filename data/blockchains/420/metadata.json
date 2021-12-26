@@ -15,5 +15,6 @@
   "shortName": "ogor",
   "chainId": 420,
   "networkId": 420,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

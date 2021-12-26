@@ -15,5 +15,6 @@
   "shortName": "xdc",
   "chainId": 50,
   "networkId": 50,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -18,5 +18,6 @@
   "shortName": "zcrbeach",
   "chainId": 3331,
   "networkId": 3331,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

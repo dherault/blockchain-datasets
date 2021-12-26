@@ -19,5 +19,6 @@
   "shortName": "ckb",
   "chainId": 71393,
   "networkId": 1,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

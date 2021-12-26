@@ -15,5 +15,6 @@
   "shortName": "dax",
   "chainId": 142,
   "networkId": 142,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

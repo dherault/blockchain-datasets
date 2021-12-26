@@ -14,5 +14,6 @@
   "chainId": 127,
   "networkId": 127,
   "slip44": 127,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

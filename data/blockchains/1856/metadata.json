@@ -15,5 +15,6 @@
   "shortName": "tsf",
   "chainId": 1856,
   "networkId": 1,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

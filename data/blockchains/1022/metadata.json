@@ -13,5 +13,6 @@
   "shortName": "sku",
   "chainId": 1022,
   "networkId": 1022,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

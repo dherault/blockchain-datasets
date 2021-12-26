@@ -18,5 +18,6 @@
   "shortName": "pixie-chain-testnet",
   "chainId": 666,
   "networkId": 666,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

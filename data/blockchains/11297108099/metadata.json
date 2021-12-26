@@ -13,5 +13,6 @@
   "shortName": "tpalm",
   "chainId": 11297108099,
   "networkId": 11297108099,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

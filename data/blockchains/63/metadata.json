@@ -13,5 +13,6 @@
   "shortName": "metc",
   "chainId": 63,
   "networkId": 7,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

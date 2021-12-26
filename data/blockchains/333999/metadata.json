@@ -18,5 +18,6 @@
   "shortName": "olympus",
   "chainId": 333999,
   "networkId": 333999,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

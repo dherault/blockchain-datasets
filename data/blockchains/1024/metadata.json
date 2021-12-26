@@ -17,5 +17,6 @@
   "shortName": "clv",
   "chainId": 1024,
   "networkId": 1024,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

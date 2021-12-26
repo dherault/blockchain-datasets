@@ -16,5 +16,6 @@
   "shortName": "mbeam",
   "chainId": 1284,
   "networkId": 1284,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

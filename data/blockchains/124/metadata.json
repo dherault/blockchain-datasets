@@ -15,5 +15,6 @@
     "symbol": "DWU",
     "decimals": 18
   },
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

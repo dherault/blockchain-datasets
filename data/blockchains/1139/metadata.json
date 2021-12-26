@@ -16,5 +16,6 @@
   "shortName": "MATH",
   "chainId": 1139,
   "networkId": 1139,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

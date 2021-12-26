@@ -18,5 +18,6 @@
   "shortName": "yeti",
   "chainId": 977,
   "networkId": 977,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

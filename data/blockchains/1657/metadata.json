@@ -15,5 +15,6 @@
   "shortName": "bta",
   "chainId": 1657,
   "networkId": 1657,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -16,5 +16,6 @@
   "shortName": "rbd",
   "chainId": 5869,
   "networkId": 5869,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

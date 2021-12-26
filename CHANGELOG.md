@@ -1,5 +1,9 @@
 # Changelog
 
+## v6.1.0
+
+- Add `wrappedNativeTokenAddress` to blockchain metadata from sushiswap-sdk
+
 ## v6.0.0
 
 - Rework `blockchains` directory

@@ -15,5 +15,6 @@
   "shortName": "Kortho",
   "chainId": 8285,
   "networkId": 8285,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

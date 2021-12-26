@@ -17,5 +17,6 @@
   "shortName": "GEN",
   "chainId": 10101,
   "networkId": 10101,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

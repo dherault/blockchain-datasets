@@ -1006,5 +1006,37 @@
     "decimals": 18,
     "chainId": 137,
     "logoURI": "https://raw.githubusercontent.com/sushiswap/logos/main/network/matic/0x3Ad707dA309f3845cd602059901E39C4dcd66473.jpg"
+  },
+  "0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F": {
+    "name": "VOXEL Token",
+    "address": "0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F",
+    "symbol": "VOXEL",
+    "decimals": 18,
+    "chainId": 137,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0xd0258a3fD00f38aa8090dfee343f10A9D4d30D3F/logo.png"
+  },
+  "0xeb45921FEDaDF41dF0BfCF5c33453aCedDA32441": {
+    "name": "pZUG",
+    "address": "0xeb45921FEDaDF41dF0BfCF5c33453aCedDA32441",
+    "symbol": "pZUG",
+    "decimals": 18,
+    "chainId": 137,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0xeb45921FEDaDF41dF0BfCF5c33453aCedDA32441/logo.png"
+  },
+  "0x596eBE76e2DB4470966ea395B0d063aC6197A8C5": {
+    "name": "Jarvis Reward Token",
+    "address": "0x596eBE76e2DB4470966ea395B0d063aC6197A8C5",
+    "symbol": "JRT",
+    "decimals": 18,
+    "chainId": 137,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/polygon/assets/0x596eBE76e2DB4470966ea395B0d063aC6197A8C5/logo.png"
+  },
+  "0x6811079E3c63ED96Eb005384d7E7ec8810E3D521": {
+    "address": "0x6811079E3c63ED96Eb005384d7E7ec8810E3D521",
+    "chainId": 137,
+    "name": "SushiBar",
+    "symbol": "xSUSHI",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/xsushi.jpg"
   }
 }

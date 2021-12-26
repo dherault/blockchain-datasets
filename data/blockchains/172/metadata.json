@@ -18,5 +18,6 @@
   "shortName": "resil",
   "chainId": 172,
   "networkId": 172,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -13,5 +13,6 @@
   "shortName": "tclo",
   "chainId": 821,
   "networkId": 2,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

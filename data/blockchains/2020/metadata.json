@@ -13,5 +13,6 @@
   "shortName": "420",
   "chainId": 2020,
   "networkId": 2020,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

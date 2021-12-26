@@ -15,5 +15,6 @@
   "shortName": "tfi",
   "chainId": 17,
   "networkId": 17,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -16,5 +16,6 @@
   "shortName": "dstg",
   "chainId": 13,
   "networkId": 13,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

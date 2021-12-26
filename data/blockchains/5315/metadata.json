@@ -15,5 +15,6 @@
   "shortName": "UZMI",
   "chainId": 5315,
   "networkId": 5315,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

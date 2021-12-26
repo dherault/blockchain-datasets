@@ -15,5 +15,6 @@
   "shortName": "mdgl",
   "chainId": 8029,
   "networkId": 8029,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

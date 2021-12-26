@@ -15,5 +15,6 @@
   "shortName": "atstau",
   "chainId": 246785,
   "networkId": 246785,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

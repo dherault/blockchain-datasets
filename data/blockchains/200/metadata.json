@@ -26,5 +26,6 @@
     "chain": "eip155-100",
     "type": "L2"
   },
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

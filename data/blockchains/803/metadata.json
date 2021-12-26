@@ -15,5 +15,6 @@
   "shortName": "haic",
   "chainId": 803,
   "networkId": 803,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

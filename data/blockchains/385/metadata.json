@@ -17,5 +17,6 @@
   "shortName": "lisinski",
   "chainId": 385,
   "networkId": 385,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

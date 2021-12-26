@@ -15,5 +15,6 @@
   "shortName": "GooD",
   "chainId": 33,
   "networkId": 33,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

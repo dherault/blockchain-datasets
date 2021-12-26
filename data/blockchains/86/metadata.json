@@ -24,5 +24,6 @@
     }
   ],
   "infoURL": "https://www.gatechain.io",
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

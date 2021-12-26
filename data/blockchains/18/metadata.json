@@ -17,5 +17,6 @@
   "shortName": "TST",
   "chainId": 18,
   "networkId": 18,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

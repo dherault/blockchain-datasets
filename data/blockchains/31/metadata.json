@@ -18,5 +18,6 @@
   "shortName": "trsk",
   "chainId": 31,
   "networkId": 31,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

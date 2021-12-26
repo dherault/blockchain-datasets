@@ -15,5 +15,6 @@
   "shortName": "pht",
   "chainId": 163,
   "networkId": 163,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

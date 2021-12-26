@@ -13,5 +13,6 @@
   "shortName": "tclv",
   "chainId": 1023,
   "networkId": 1023,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -15,5 +15,6 @@
   "shortName": "primuschain",
   "chainId": 78,
   "networkId": 78,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

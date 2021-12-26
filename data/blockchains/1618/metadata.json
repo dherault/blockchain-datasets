@@ -15,5 +15,6 @@
   "shortName": "cate",
   "chainId": 1618,
   "networkId": 1618,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

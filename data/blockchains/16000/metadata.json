@@ -15,5 +15,6 @@
   "shortName": "mtt",
   "chainId": 16000,
   "networkId": 16000,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

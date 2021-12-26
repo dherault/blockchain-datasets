@@ -13,5 +13,6 @@
   "shortName": "mrock",
   "chainId": 1286,
   "networkId": 1286,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

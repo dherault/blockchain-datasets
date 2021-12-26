@@ -18,5 +18,6 @@
   "shortName": "sparta",
   "chainId": 333888,
   "networkId": 333888,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

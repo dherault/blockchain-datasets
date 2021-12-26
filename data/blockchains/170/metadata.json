@@ -17,5 +17,6 @@
   "shortName": "hoosmartchain",
   "chainId": 170,
   "networkId": 170,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

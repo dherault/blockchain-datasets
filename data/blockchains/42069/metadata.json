@@ -13,5 +13,6 @@
   "shortName": "PC",
   "chainId": 42069,
   "networkId": 42069,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

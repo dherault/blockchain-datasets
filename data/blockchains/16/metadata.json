@@ -15,5 +15,6 @@
   "shortName": "cflr",
   "chainId": 16,
   "networkId": 16,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

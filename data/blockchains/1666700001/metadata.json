@@ -15,5 +15,6 @@
   "shortName": "hmy-b-s1",
   "chainId": 1666700001,
   "networkId": 1666700001,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

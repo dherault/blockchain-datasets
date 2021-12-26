@@ -15,5 +15,6 @@
   "shortName": "TXDC",
   "chainId": 51,
   "networkId": 51,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

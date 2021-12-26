@@ -15,5 +15,6 @@
   "shortName": "cth",
   "chainId": 777,
   "networkId": 777,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

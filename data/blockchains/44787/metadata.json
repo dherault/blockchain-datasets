@@ -19,5 +19,6 @@
     "https://cauldron.pretoriaresearchlab.io/alfajores-faucet"
   ],
   "infoURL": "https://docs.celo.org/",
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

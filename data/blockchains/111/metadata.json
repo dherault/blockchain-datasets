@@ -18,5 +18,6 @@
   "chainId": 111,
   "networkId": 111,
   "icon": "etherlite",
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

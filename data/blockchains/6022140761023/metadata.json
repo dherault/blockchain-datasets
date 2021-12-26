@@ -15,5 +15,6 @@
   "shortName": "mole",
   "chainId": 6022140761023,
   "networkId": 6022140761023,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

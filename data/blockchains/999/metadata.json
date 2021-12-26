@@ -15,5 +15,6 @@
   "shortName": "twan",
   "chainId": 999,
   "networkId": 999,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

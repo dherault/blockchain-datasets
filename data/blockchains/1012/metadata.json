@@ -15,5 +15,6 @@
   "shortName": "new",
   "chainId": 1012,
   "networkId": 1012,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

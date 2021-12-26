@@ -3,7 +3,7 @@
   "chain": "KLAY",
   "network": "baobab",
   "rpc": [
-    "https://node-api.klaytnapi.com/v1/klaytn"
+    "https://api.baobab.klaytn.net:8651"
   ],
   "faucets": [
     "https://baobab.wallet.klaytn.com/access?next=faucet"
@@ -17,5 +17,6 @@
   "shortName": "Baobab",
   "chainId": 1001,
   "networkId": 1001,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

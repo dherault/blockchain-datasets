@@ -16,5 +16,6 @@
   "chainId": 1010,
   "networkId": 1010,
   "slip44": 1020,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

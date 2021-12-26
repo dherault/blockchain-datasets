@@ -15,5 +15,6 @@
   "shortName": "ktoc",
   "chainId": 2559,
   "networkId": 2559,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

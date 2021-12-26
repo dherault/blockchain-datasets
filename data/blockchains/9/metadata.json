@@ -13,5 +13,6 @@
   "shortName": "tubq",
   "chainId": 9,
   "networkId": 2,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

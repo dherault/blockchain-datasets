@@ -17,5 +17,6 @@
   "shortName": "avaeth",
   "chainId": 43110,
   "networkId": 43110,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

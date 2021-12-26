@@ -15,5 +15,6 @@
   "shortName": "tch",
   "chainId": 7,
   "networkId": 7,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

@@ -26,5 +26,6 @@
   "dexes": [
     "sushiswap",
     "fatex"
-  ]
+  ],
+  "wrappedNativeTokenAddress": "0xe73763DB808ecCDC0E36bC8E32510ED126910394"
 }

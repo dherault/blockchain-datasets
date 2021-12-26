@@ -15,5 +15,6 @@
   "shortName": "xpr",
   "chainId": 110,
   "networkId": 110,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

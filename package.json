@@ -4,6 +4,7 @@
   "description": "Any token, any blockchain, any dex.",
   "main": "build/blockchainIdToTokens.json",
   "scripts": {
+    "start:watch": "npm run dev",
     "dev": "nodemon -e .js --exec \"npm run build\"",
     "build": "ts-node src/index.js",
     "prepublishOnly": "npm run build",

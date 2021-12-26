@@ -17,5 +17,6 @@
   "shortName": "tMATH",
   "chainId": 1140,
   "networkId": 1140,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

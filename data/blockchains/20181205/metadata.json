@@ -16,5 +16,6 @@
   "shortName": "qki",
   "chainId": 20181205,
   "networkId": 20181205,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }

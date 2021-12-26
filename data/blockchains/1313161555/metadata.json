@@ -15,5 +15,6 @@
   "shortName": "aurora-testnet",
   "chainId": 1313161555,
   "networkId": 1313161555,
-  "dexes": []
+  "dexes": [],
+  "wrappedNativeTokenAddress": null
 }
