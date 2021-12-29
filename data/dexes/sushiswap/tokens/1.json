@@ -1125,7 +1125,7 @@
     "name": "Magic Internet Money",
     "symbol": "MIM",
     "decimals": 18,
-    "logoURI": "https://abracadabra.money/img/Token_MIM.12c48248.svg"
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/icons/master/token/mim.jpg"
   },
   "0x4b4D2e899658FB59b1D518b68fe836B100ee8958": {
     "address": "0x4b4D2e899658FB59b1D518b68fe836B100ee8958",
@@ -3566,5 +3566,13 @@
     "symbol": "SOS",
     "decimals": 18,
     "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x3b484b82567a09e2588A13D54D032153f0c0aEe0/logo.png"
+  },
+  "0x2DDbFb13677E8Df85F37Aa8E578424E99AF7Cb62": {
+    "address": "0x2DDbFb13677E8Df85F37Aa8E578424E99AF7Cb62",
+    "chainId": 1,
+    "name": "Wrapped",
+    "symbol": "WRAP",
+    "decimals": 18,
+    "logoURI": "https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x2DDbFb13677E8Df85F37Aa8E578424E99AF7Cb62/logo.png"
   }
 }
