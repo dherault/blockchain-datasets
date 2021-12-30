@@ -1,18 +1,18 @@
-# The Ultimate Blockchains, Tokens and Dexes Data Source
+# The ultimate blockchains, tokens and dexes data source
 
-[NPM](https://www.npmjs.com/package/ultimate-token-list)
+[![npm version](https://badge.fury.io/js/blockchain-datasets.svg)](https://badge.fury.io/js/blockchain-datasets)
 
-This library is an aggregation of blockchain-related data including:
+This library is an aggregation of blockchain-related data from various sources including:
+
 - Blockchains data
-- ERC20 Tokens data
-- Stablecoins data
+- Tokens data
 - Dexes data, including contracts addresses and ABIs
 
-The project is immature and will grow some more hopefully.
+It is meant as a good starting point for any blockchain-based development work.
 
 ## Where is the data?
 
-Look under the [data directory](https://github.com/dherault/ultimate-token-list/tree/main/data).
+Look under the [data directory](https://github.com/dherault/blockchain-datasets/tree/main/data).
 
 ## Contributing
 
