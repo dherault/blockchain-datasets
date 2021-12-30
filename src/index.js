@@ -8,6 +8,7 @@ const parseContracts = require('./tasks/parseContracts')
 const parseTokens = require('./tasks/parseTokens')
 const parseSushiswapWrappedNativeTokens = require('./tasks/parseSushiswapWrappedNativeTokens')
 const processContracts = require('./tasks/processContracts')
+const processViperswapTokens = require('./tasks/processViperswapTokens')
 
 async function build() {
   await del(getBuildLocation('*'))
@@ -71,6 +72,25 @@ async function build() {
           },
         },
       },
+      viperswap: {
+        id: 'viperswap',
+        name: 'ViperSwap',
+        url: 'https://viperswap.one',
+        contractTypeToContractName: {
+          pair: 'UniswapV2Pair',
+          factory: 'UniswapV2Factory',
+          router: 'UniswapV2Router02',
+        },
+        __metadata__: {
+          tokensGitUrl: 'git@github.com:VenomProtocol/venomswap-community-token-list.git',
+          chainIdToFactoryAddress: {
+            1666600000: '0x7D02c116b98d0965ba7B642ace0183ad8b8D2196',
+          },
+          chainIdToRouterAddress: {
+            1666600000: '0xf012702a5f0e54015362cBCA26a26fc90AA832a3',
+          },
+        },
+      },
     },
     abiNameToAbi: {
       ERC20: require(path.resolve(__dirname, './inputs/ERC20.abi.json')),
@@ -118,6 +138,13 @@ async function build() {
   --- */
 
   await processContracts(data, 'quickswap')
+
+  /* ---
+    viperswap
+  --- */
+
+  await processContracts(data, 'viperswap')
+  await processViperswapTokens(data)
 
   /* ---
     Post-processing

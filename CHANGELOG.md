@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.0
+
+- Add ViperSwap dex
+
 ## v1.1.0
 
 - Add QuickSwap dex
