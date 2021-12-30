@@ -1,4 +1,4 @@
-# The ultimate blockchains, tokens and dexes data source
+# The ultimate blockchains, tokens, and dexes data source
 
 [![npm version](https://badge.fury.io/js/blockchain-datasets.svg)](https://badge.fury.io/js/blockchain-datasets)
 
