@@ -7,11 +7,11 @@ const clone = require('git-clone/promise')
 async function parseContracts(data, dexId) {
   const dexMetadata = data.dexIdToDexMetadata[dexId]
 
-  console.log(`Parsing ${dexMetadata.contractsGitUrl}`)
+  console.log(`Parsing ${dexMetadata.__metadata__.contractsGitUrl}`)
 
   const tmpDir = await tmp.dir({ unsafeCleanup: true })
 
-  await clone(dexMetadata.contractsGitUrl, tmpDir.path)
+  await clone(dexMetadata.__metadata__.contractsGitUrl, tmpDir.path)
 
   const defaultContractNameToContractInfo = {
     UniswapV2Pair: {
@@ -48,7 +48,7 @@ async function parseContracts(data, dexId) {
           json = JSON.parse(fs.readFileSync(path.join(smartContractsDeploymentsLocation, folder, file), 'utf8'))
         }
         catch (e) {
-          console.log(`Error parsing ${dexMetadata.contractsGitUr} JSON`, file)
+          console.log(`Error parsing ${dexMetadata.__metadata__.contractsGitUr} JSON`, file)
         }
 
         const contractName = file.replace('.json', '')

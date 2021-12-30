@@ -1,7 +1,7 @@
 {
-  "id": "fatex",
-  "name": "FATEx",
-  "url": "https://fatex.io",
+  "id": "quickswap",
+  "name": "QuickSwap",
+  "url": "https://quickswap.exchange",
   "contractTypeToContractName": {
     "pair": "UniswapV2Pair",
     "factory": "UniswapV2Factory",

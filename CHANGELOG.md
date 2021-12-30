@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.0
+
+- Add QuickSwap dex
+
+## blockchain-datasets v1.0.0
+
+- Rename project
+
 ## v6.1.0
 
 - Add `wrappedNativeTokenAddress` to blockchain metadata from sushiswap-sdk

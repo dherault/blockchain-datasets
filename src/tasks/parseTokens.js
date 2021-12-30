@@ -7,23 +7,23 @@ const clone = require('git-clone/promise')
 async function parseTokens(data, dexId) {
   const dexMetadata = data.dexIdToDexMetadata[dexId]
 
-  console.log(`Parsing ${dexMetadata.tokensGitUrl}`)
+  console.log(`Parsing ${dexMetadata.__metadata__.tokensGitUrl}`)
 
   const tmpDir = await tmp.dir({ unsafeCleanup: true })
 
-  await clone(dexMetadata.tokensGitUrl, tmpDir.path)
+  await clone(dexMetadata.__metadata__.tokensGitUrl, tmpDir.path)
 
   data.dexIdToChainIdTokenAddressToTokenMetadata[dexId] = {}
 
-  fs.readdirSync(path.join(tmpDir.path, dexMetadata.tokensLocation))
+  fs.readdirSync(path.join(tmpDir.path, dexMetadata.__metadata__.tokensLocation))
   .forEach(file => {
     let json = []
 
     try {
-      json = require(path.join(tmpDir.path, dexMetadata.tokensLocation, file))
+      json = require(path.join(tmpDir.path, dexMetadata.__metadata__.tokensLocation, file))
     }
     catch (e) {
-      console.log(`Error parsing ${dexMetadata.tokensGitUrl} JSON`, file)
+      console.log(`Error parsing ${dexMetadata.__metadata__.tokensGitUrl} JSON`, file)
     }
 
     if (!json.length) return

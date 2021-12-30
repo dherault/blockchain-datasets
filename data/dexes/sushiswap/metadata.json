@@ -2,10 +2,6 @@
   "id": "sushiswap",
   "name": "SushiSwap",
   "url": "https://sushi.com",
-  "tokensGitUrl": "git@github.com:sushiswap/default-token-list.git",
-  "tokensLocation": "tokens",
-  "sdkGitUrl": "git@github.com:sushiswap/sushiswap-sdk.git",
-  "contractsGitUrl": "git@github.com:sushiswap/sushiswap.git",
   "contractTypeToContractName": {
     "pair": "UniswapV2Pair",
     "factory": "UniswapV2Factory",

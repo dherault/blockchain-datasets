@@ -7,6 +7,7 @@ const axios = require('axios')
 const parseContracts = require('./tasks/parseContracts')
 const parseTokens = require('./tasks/parseTokens')
 const parseSushiswapWrappedNativeTokens = require('./tasks/parseSushiswapWrappedNativeTokens')
+const processContracts = require('./tasks/processContracts')
 
 async function build() {
   await del(getBuildLocation('*'))
@@ -17,33 +18,65 @@ async function build() {
         id: 'sushiswap',
         name: 'SushiSwap',
         url: 'https://sushi.com',
-        tokensGitUrl: 'git@github.com:sushiswap/default-token-list.git',
-        tokensLocation: 'tokens',
-        sdkGitUrl: 'git@github.com:sushiswap/sushiswap-sdk.git',
-        contractsGitUrl: 'git@github.com:sushiswap/sushiswap.git',
         contractTypeToContractName: {
           pair: 'UniswapV2Pair',
           factory: 'UniswapV2Factory',
           router: 'UniswapV2Router02',
+        },
+        __metadata__: {
+          tokensGitUrl: 'git@github.com:sushiswap/default-token-list.git',
+          tokensLocation: 'tokens',
+          sdkGitUrl: 'git@github.com:sushiswap/sushiswap-sdk.git',
+          contractsGitUrl: 'git@github.com:sushiswap/sushiswap.git',
         },
       },
       fatex: {
         id: 'fatex',
         name: 'FATEx',
         url: 'https://fatex.io',
-        tokensGitUrl: 'git@github.com:FATEx-DAO/default-token-list.git',
-        tokensLocation: 'src/tokens',
-        contractsGitUrl: 'git@github.com:FATEx-DAO/fatex-dex-protocol.git',
         contractTypeToContractName: {
           pair: 'UniswapV2Pair',
           factory: 'UniswapV2Factory',
           router: 'UniswapV2Router02',
         },
+        __metadata__: {
+          tokensGitUrl: 'git@github.com:FATEx-DAO/default-token-list.git',
+          tokensLocation: 'src/tokens',
+          contractsGitUrl: 'git@github.com:FATEx-DAO/fatex-dex-protocol.git',
+        },
+      },
+      quickswap: {
+        id: 'quickswap',
+        name: 'QuickSwap',
+        url: 'https://quickswap.exchange',
+        contractTypeToContractName: {
+          pair: 'UniswapV2Pair',
+          factory: 'UniswapV2Factory',
+          router: 'UniswapV2Router02',
+        },
+        __metadata__: {
+          chainIdToFactoryAddress: {
+            1: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+            3: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+            4: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+            5: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+            42: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
+          },
+          chainIdToRouterAddress: {
+            1: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+            3: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+            4: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+            5: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+            42: '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D',
+          },
+        },
       },
     },
     abiNameToAbi: {
-      ERC20: require(path.resolve(__dirname, '../inputs/ERC20.abi.json')),
-      UniswapV2Pair: require(path.resolve(__dirname, '../inputs/UniswapV2Pair.abi.json')),
+      ERC20: require(path.resolve(__dirname, './inputs/ERC20.abi.json')),
+      UniswapV2Pair: require(path.resolve(__dirname, './inputs/UniswapV2Pair.abi.json')),
+      UniswapV2Factory: require(path.resolve(__dirname, './inputs/UniswapV2Factory.abi.json')),
+      UniswapV2Router02: require(path.resolve(__dirname, './inputs/UniswapV2Router02.abi.json')),
     },
     stablecoinSymbols: ['USDT', 'DAI', 'USDC', 'cUSD', 'BUSD'], // TODO complete it
     chainIdToStablecoinAddressToStableCoinMetadata: {},
@@ -79,6 +112,12 @@ async function build() {
 
   await parseContracts(data, 'fatex')
   await parseTokens(data, 'fatex')
+
+  /* ---
+    quickswap
+  --- */
+
+  await processContracts(data, 'quickswap')
 
   /* ---
     Post-processing
@@ -132,52 +171,53 @@ async function build() {
   --- */
 
   Object.entries(data.chainIdToChainMetadata).forEach(([chainId, chainMetadata]) => {
-    createDirectory(getBuildLocation(`blockchains/${chainId}`))
-    saveJson(getBuildLocation(`blockchains/${chainId}/metadata.json`), chainMetadata)
+    createDirectory(`blockchains/${chainId}`)
+    saveJson(`blockchains/${chainId}/metadata.json`, chainMetadata)
   })
 
   Object.entries(data.chainIdToTokenAddressToTokenMetadata)
   .forEach(([chainId, tokenAddressToTokenMetadata]) => {
-    createDirectory(getBuildLocation(`blockchains/${chainId}`))
-    saveJson(getBuildLocation(`blockchains/${chainId}/tokens.json`), tokenAddressToTokenMetadata)
+    createDirectory(`blockchains/${chainId}`)
+    saveJson(`blockchains/${chainId}/tokens.json`, tokenAddressToTokenMetadata)
   })
 
   Object.entries(data.chainIdToStablecoinAddressToStableCoinMetadata)
   .forEach(([chainId, stablecoinAddressToStableCoinMetadata]) => {
-    createDirectory(getBuildLocation(`blockchains/${chainId}`))
-    saveJson(getBuildLocation(`blockchains/${chainId}/stablecoins.json`), stablecoinAddressToStableCoinMetadata)
+    createDirectory(`blockchains/${chainId}`)
+    saveJson(`blockchains/${chainId}/stablecoins.json`, stablecoinAddressToStableCoinMetadata)
   })
 
   Object.entries(data.dexIdToDexMetadata).forEach(([dexId, dexMetadata]) => {
-    createDirectory(getBuildLocation(`dexes/${dexId}`))
-    saveJson(getBuildLocation(`dexes/${dexId}/metadata.json`), dexMetadata)
+    delete dexMetadata.__metadata__
+    createDirectory(`dexes/${dexId}`)
+    saveJson(`dexes/${dexId}/metadata.json`, dexMetadata)
   })
 
   Object.entries(data.dexIdToChainIdTokenAddressToTokenMetadata).forEach(([dexId, chainIdToTokenAddressToTokenMetadata]) => {
     Object.entries(chainIdToTokenAddressToTokenMetadata).forEach(([chainId, tokenAddressToTokenMetadata]) => {
-      createDirectory(getBuildLocation(`dexes/${dexId}/tokens`))
-      saveJson(getBuildLocation(`dexes/${dexId}/tokens/${chainId}.json`), tokenAddressToTokenMetadata)
+      createDirectory(`dexes/${dexId}/tokens`)
+      saveJson(`dexes/${dexId}/tokens/${chainId}.json`, tokenAddressToTokenMetadata)
     })
   })
 
   Object.entries(data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata)
   .forEach(([dexId, chainIdToStablecoinAddressToStablecoinMetadata]) => {
-    createDirectory(getBuildLocation(`dexes/${dexId}/stablecoins`))
+    createDirectory(`dexes/${dexId}/stablecoins`)
     Object.entries(chainIdToStablecoinAddressToStablecoinMetadata).forEach(([chainId, stablecoinAddressToStableCoinMetadata]) => {
-      saveJson(getBuildLocation(`dexes/${dexId}/stablecoins/${chainId}.json`), stablecoinAddressToStableCoinMetadata)
+      saveJson(`dexes/${dexId}/stablecoins/${chainId}.json`, stablecoinAddressToStableCoinMetadata)
     })
   })
 
   Object.entries(data.dexIdToChainIdToContractNameToContractInfo).forEach(([dexId, chainIdToContractNameToContractInfo]) => {
     Object.entries(chainIdToContractNameToContractInfo).forEach(([chainId, contractNameToContractInfo]) => {
-      createDirectory(getBuildLocation(`dexes/${dexId}/contracts`))
-      saveJson(getBuildLocation(`dexes/${dexId}/contracts/${chainId}.json`), contractNameToContractInfo)
+      createDirectory(`dexes/${dexId}/contracts`)
+      saveJson(`dexes/${dexId}/contracts/${chainId}.json`, contractNameToContractInfo)
     })
   })
 
   Object.entries(data.abiNameToAbi).forEach(([abiName, abi]) => {
-    createDirectory(getBuildLocation('abis'))
-    saveJson(getBuildLocation(`abis/${abiName}.json`), abi)
+    createDirectory('abis')
+    saveJson(`abis/${abiName}.json`, abi)
   })
 }
 
@@ -186,11 +226,11 @@ function getBuildLocation(x) {
 }
 
 function saveJson(path, json) {
-  fs.writeFileSync(path, JSON.stringify(json, null, 2), 'utf8')
+  fs.writeFileSync(getBuildLocation(path), JSON.stringify(json, null, 2), 'utf8')
 }
 
 function createDirectory(path) {
-  fs.mkdirSync(path, { recursive: true })
+  fs.mkdirSync(getBuildLocation(path), { recursive: true })
 }
 
 build()
