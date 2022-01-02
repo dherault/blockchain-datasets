@@ -1,4 +1,3 @@
-
 function processContracts(data, dexId) {
   const dexMetadata = data.dexIdToDexMetadata[dexId]
 
@@ -30,7 +29,7 @@ function processContracts(data, dexId) {
       data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId] = { ...defaultContractNameToContractInfo }
     }
 
-    data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId].router = {
+    data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId].UniswapV2Router02 = {
       address: routerAddress,
       abi: data.abiNameToAbi.UniswapV2Router02,
     }
@@ -41,7 +40,7 @@ function processContracts(data, dexId) {
       data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId] = { ...defaultContractNameToContractInfo }
     }
 
-    data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId].factory = {
+    data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId].UniswapV2Factory = {
       address: factoryAddress,
       abi: data.abiNameToAbi.UniswapV2Factory,
     }
