@@ -21,7 +21,9 @@ function processContracts(data, dexId) {
     },
   }
 
-  data.dexIdToChainIdToContractNameToContractInfo[dexId] = {}
+  if (!data.dexIdToChainIdToContractNameToContractInfo[dexId]) {
+    data.dexIdToChainIdToContractNameToContractInfo[dexId] = {}
+  }
 
   Object.entries(chainIdToRouterAddress).forEach(([chainId, routerAddress]) => {
     if (!data.dexIdToChainIdToContractNameToContractInfo[dexId][chainId]) {

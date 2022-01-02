@@ -9,6 +9,7 @@ const parseTokens = require('./tasks/parseTokens')
 const parseSushiswapWrappedNativeTokens = require('./tasks/parseSushiswapWrappedNativeTokens')
 const processContracts = require('./tasks/processContracts')
 const processViperswapTokens = require('./tasks/processViperswapTokens')
+const processViperswapCommunityTokens = require('./tasks/processViperswapCommunityTokens')
 
 async function build() {
   await del(getBuildLocation('*'))
@@ -82,7 +83,9 @@ async function build() {
           router: 'UniswapV2Router02',
         },
         __metadata__: {
-          tokensGitUrl: 'git@github.com:VenomProtocol/venomswap-community-token-list.git',
+          tokensGitUrl: 'git@github.com:VenomProtocol/venomswap-interface.git',
+          tokensLocation: 'src/constants/lists.ts',
+          communityTokensGitUrl: 'git@github.com:VenomProtocol/venomswap-community-token-list.git',
           chainIdToFactoryAddress: {
             1666600000: '0x7D02c116b98d0965ba7B642ace0183ad8b8D2196',
           },
@@ -145,6 +148,7 @@ async function build() {
 
   await processContracts(data, 'viperswap')
   await processViperswapTokens(data)
+  await processViperswapCommunityTokens(data)
 
   /* ---
     Post-processing
@@ -160,15 +164,13 @@ async function build() {
   .forEach(([chainId, tokenAddressToTokenMetadata]) => {
     const stablecoins = Object.values(tokenAddressToTokenMetadata).filter(tokenMetadata => data.stablecoinSymbols.includes(tokenMetadata.symbol))
 
-    if (stablecoins.length > 0) {
-      if (!data.chainIdToStablecoinAddressToStableCoinMetadata[chainId]) {
-        data.chainIdToStablecoinAddressToStableCoinMetadata[chainId] = {}
-      }
-
-      stablecoins.forEach(stablecoin => {
-        data.chainIdToStablecoinAddressToStableCoinMetadata[chainId][stablecoin.address] = stablecoin
-      })
+    if (!data.chainIdToStablecoinAddressToStableCoinMetadata[chainId]) {
+      data.chainIdToStablecoinAddressToStableCoinMetadata[chainId] = {}
     }
+
+    stablecoins.forEach(stablecoin => {
+      data.chainIdToStablecoinAddressToStableCoinMetadata[chainId][stablecoin.address] = stablecoin
+    })
   })
 
   Object.entries(data.dexIdToChainIdTokenAddressToTokenMetadata)
@@ -181,15 +183,13 @@ async function build() {
     .forEach(([chainId, tokenAddressToTokenMetadata]) => {
       const stablecoins = Object.values(tokenAddressToTokenMetadata).filter(tokenMetadata => data.stablecoinSymbols.includes(tokenMetadata.symbol))
 
-      if (stablecoins.length > 0) {
-        if (!data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId]) {
-          data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId] = {}
-        }
-
-        stablecoins.forEach(stablecoin => {
-          data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId][stablecoin.address] = stablecoin
-        })
+      if (!data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId]) {
+        data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId] = {}
       }
+
+      stablecoins.forEach(stablecoin => {
+        data.dexIdToChainIdToStablecoinAddressToStablecoinMetadata[dexId][chainId][stablecoin.address] = stablecoin
+      })
     })
   })
 

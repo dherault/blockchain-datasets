@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.3.0
+
+- Fill-in with empty stablecoins list
+- Update viperswap tokens list
+
 ## v1.2.0
 
 - Add ViperSwap dex

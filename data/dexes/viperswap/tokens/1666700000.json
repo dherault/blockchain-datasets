@@ -1,1 +1,98 @@
-{}
+{
+  "0x0E80905676226159cC3FF62B1876C907C91F7395": {
+    "chainId": 1666700000,
+    "address": "0x0E80905676226159cC3FF62B1876C907C91F7395",
+    "symbol": "1BUSD",
+    "name": "OneBUSD",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
+  },
+  "0xC27255D7805Fc79e4616d5CD50D6f4464AEa75A3": {
+    "chainId": 1666700000,
+    "address": "0xC27255D7805Fc79e4616d5CD50D6f4464AEa75A3",
+    "symbol": "1DAI",
+    "name": "OneDAI",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/9956/small/dai-multi-collateral-mcd.png"
+  },
+  "0x1E120B3b4aF96e7F394ECAF84375b1C661830013": {
+    "chainId": 1666700000,
+    "address": "0x1E120B3b4aF96e7F394ECAF84375b1C661830013",
+    "symbol": "1ETH",
+    "name": "OneETH",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/279/small/ethereum.png"
+  },
+  "0x2C6e26B2faD89bc52d043e78E3D980A08af0Ce88": {
+    "chainId": 1666700000,
+    "address": "0x2C6e26B2faD89bc52d043e78E3D980A08af0Ce88",
+    "symbol": "1LINK",
+    "name": "OneChainlink",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/877/small/chainlink-new-logo.png"
+  },
+  "0x9F952fc002D16d672f49387A83Aeb968A276d6F1": {
+    "chainId": 1666700000,
+    "address": "0x9F952fc002D16d672f49387A83Aeb968A276d6F1",
+    "symbol": "1MIM",
+    "name": "OneMIM",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/16786/small/mimlogopng.png"
+  },
+  "0x33B465B61EBb322E6336437b2624F705a34a0Df0": {
+    "chainId": 1666700000,
+    "address": "0x33B465B61EBb322E6336437b2624F705a34a0Df0",
+    "symbol": "1USDC",
+    "name": "OneUSDC",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png"
+  },
+  "0x12f839b098d1446ba9b25c4F6f7Ef49cc1846dEd": {
+    "chainId": 1666700000,
+    "address": "0x12f839b098d1446ba9b25c4F6f7Ef49cc1846dEd",
+    "symbol": "1USDT",
+    "name": "OneUSDT",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether-logo.png"
+  },
+  "0x12b7146CC70F2F1422B3b11B116f10F1925d256A": {
+    "chainId": 1666700000,
+    "address": "0x12b7146CC70F2F1422B3b11B116f10F1925d256A",
+    "symbol": "1UST",
+    "name": "OneUST",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/12681/small/UST.png"
+  },
+  "0x11F477aE5f42335928fC94601a8A81ec77b27b2b": {
+    "chainId": 1666700000,
+    "address": "0x11F477aE5f42335928fC94601a8A81ec77b27b2b",
+    "symbol": "VIPER",
+    "name": "Viper",
+    "decimals": 18,
+    "logoURI": "https://d1xrz6ki9z98vb.cloudfront.net/venomswap/tokens/VIPER.png"
+  },
+  "0x6c4387C4f570Aa8cAdcaFFc5E73ecb3D0F8Fc593": {
+    "chainId": 1666700000,
+    "address": "0x6c4387C4f570Aa8cAdcaFFc5E73ecb3D0F8Fc593",
+    "symbol": "WBTC",
+    "name": "Wrapped BTC",
+    "decimals": 8,
+    "logoURI": "https://assets.coingecko.com/coins/images/7598/small/wrapped_bitcoin_wbtc.png"
+  },
+  "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2": {
+    "chainId": 1666700000,
+    "address": "0x7466d7d0C21Fa05F32F5a0Fa27e12bdC06348Ce2",
+    "symbol": "WONE",
+    "name": "Wrapped ONE",
+    "decimals": 18,
+    "logoURI": "https://assets.coingecko.com/coins/images/4344/small/Y88JAze.png"
+  },
+  "0x98b792BD73E10CF96b9f7b3A34baCdCe06349e3b": {
+    "chainId": 1666700000,
+    "address": "0x98b792BD73E10CF96b9f7b3A34baCdCe06349e3b",
+    "symbol": "xVIPER",
+    "name": "xVIPER",
+    "decimals": 18,
+    "logoURI": "https://d1xrz6ki9z98vb.cloudfront.net/venomswap/tokens/xVIPER.png"
+  }
+}

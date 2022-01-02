@@ -1,37 +1,33 @@
-const fs = require('fs')
 const path = require('path')
 
 const tmp = require('tmp-promise')
 const clone = require('git-clone/promise')
 
-async function parseTokens(data, dexId) {
-  const dexMetadata = data.dexIdToDexMetadata[dexId]
+async function processViperswapTokens(data) {
+  const dexMetadata = data.dexIdToDexMetadata.viperswap
+  const dexId = dexMetadata.id
 
-  console.log(`Parsing ${dexMetadata.__metadata__.tokensGitUrl}`)
+  console.log(`Parsing ${dexMetadata.__metadata__.communityTokensGitUrl}`)
 
   const tmpDir = await tmp.dir({ unsafeCleanup: true })
 
-  await clone(dexMetadata.__metadata__.tokensGitUrl, tmpDir.path)
+  await clone(dexMetadata.__metadata__.communityTokensGitUrl, tmpDir.path)
 
   if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId]) {
     data.dexIdToChainIdTokenAddressToTokenMetadata[dexId] = {}
   }
 
-  fs.readdirSync(path.join(tmpDir.path, dexMetadata.__metadata__.tokensLocation))
-  .forEach(file => {
-    let json = []
-
-    try {
-      json = require(path.join(tmpDir.path, dexMetadata.__metadata__.tokensLocation, file))
-    }
-    catch (e) {
-      console.log(`Error parsing ${dexMetadata.__metadata__.tokensGitUrl} JSON`, file)
-    }
-
-    if (!json.length) return
-
-    const { chainId } = json[0]
-
+  [
+    {
+      chainId: 1666600000,
+      tokens: require(path.join(tmpDir.path, 'src/tokens/harmony-mainnet.json')),
+    },
+    {
+      chainId: 1666700000,
+      tokens: require(path.join(tmpDir.path, 'src/tokens/harmony-testnet.json')),
+    },
+  ]
+  .forEach(({ chainId, tokens }) => {
     if (!data.chainIdToTokenAddressToTokenMetadata[chainId]) {
       data.chainIdToTokenAddressToTokenMetadata[chainId] = {}
     }
@@ -40,7 +36,7 @@ async function parseTokens(data, dexId) {
       data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][chainId] = {}
     }
 
-    json.forEach(token => {
+    tokens.forEach(token => {
       if (!data.chainIdToTokenAddressToTokenMetadata[chainId][token.address]) {
         data.chainIdToTokenAddressToTokenMetadata[chainId][token.address] = token
       }
@@ -50,8 +46,6 @@ async function parseTokens(data, dexId) {
       }
     })
   })
-
-  await tmpDir.cleanup()
 }
 
-module.exports = parseTokens
+module.exports = processViperswapTokens

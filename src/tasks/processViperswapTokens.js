@@ -1,5 +1,6 @@
 const path = require('path')
 
+const axios = require('axios')
 const tmp = require('tmp-promise')
 const clone = require('git-clone/promise')
 
@@ -13,36 +14,28 @@ async function processViperswapTokens(data) {
 
   await clone(dexMetadata.__metadata__.tokensGitUrl, tmpDir.path)
 
-  data.dexIdToChainIdTokenAddressToTokenMetadata[dexId] = {}
+  if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId]) {
+    data.dexIdToChainIdTokenAddressToTokenMetadata[dexId] = {}
+  }
 
-  ;[
-    {
-      chainId: 1666600000,
-      tokens: require(path.join(tmpDir.path, 'src/tokens/harmony-mainnet.json')),
-    },
-    {
-      chainId: 1666700000,
-      tokens: require(path.join(tmpDir.path, 'src/tokens/harmony-testnet.json')),
-    },
-  ]
-  .forEach(({ chainId, tokens }) => {
-    if (!data.chainIdToTokenAddressToTokenMetadata[chainId]) {
-      data.chainIdToTokenAddressToTokenMetadata[chainId] = {}
+  const url = require(path.join(tmpDir.path, dexMetadata.__metadata__.tokensLocation)).DEFAULT_ACTIVE_LIST_URLS[0]
+
+  ;(await axios.get(url)).data.tokens.forEach(token => {
+    if (!data.chainIdToTokenAddressToTokenMetadata[token.chainId]) {
+      data.chainIdToTokenAddressToTokenMetadata[token.chainId] = {}
     }
 
-    if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][chainId]) {
-      data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][chainId] = {}
+    if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][token.chainId]) {
+      data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][token.chainId] = {}
     }
 
-    tokens.forEach(token => {
-      if (!data.chainIdToTokenAddressToTokenMetadata[chainId][token.address]) {
-        data.chainIdToTokenAddressToTokenMetadata[chainId][token.address] = token
-      }
+    if (!data.chainIdToTokenAddressToTokenMetadata[token.chainId][token.address]) {
+      data.chainIdToTokenAddressToTokenMetadata[token.chainId][token.address] = token
+    }
 
-      if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][chainId][token.address]) {
-        data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][chainId][token.address] = token
-      }
-    })
+    if (!data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][token.chainId][token.address]) {
+      data.dexIdToChainIdTokenAddressToTokenMetadata[dexId][token.chainId][token.address] = token
+    }
   })
 }
 

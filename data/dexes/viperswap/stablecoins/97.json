@@ -1,0 +1,26 @@
+{
+  "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee": {
+    "name": "BUSD Token",
+    "address": "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee",
+    "symbol": "BUSD",
+    "decimals": 18,
+    "chainId": 97,
+    "logoURI": "https://assets.coingecko.com/coins/images/9576/small/BUSD.png"
+  },
+  "0xEC5dCb5Dbf4B114C9d0F65BcCAb49EC54F6A0867": {
+    "name": "Dai Token",
+    "address": "0xEC5dCb5Dbf4B114C9d0F65BcCAb49EC54F6A0867",
+    "symbol": "DAI",
+    "decimals": 18,
+    "chainId": 97,
+    "logoURI": "https://assets.coingecko.com/coins/images/9956/small/dai-multi-collateral-mcd.png"
+  },
+  "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd": {
+    "name": "Tether USD",
+    "address": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd",
+    "symbol": "USDT",
+    "decimals": 18,
+    "chainId": 97,
+    "logoURI": "https://assets.coingecko.com/coins/images/325/small/Tether-logo.png"
+  }
+}

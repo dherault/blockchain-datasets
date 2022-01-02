@@ -22,7 +22,9 @@ async function parseContracts(data, dexId) {
 
   const smartContractsDeploymentsLocation = path.join(tmpDir.path, 'deployments')
 
-  data.dexIdToChainIdToContractNameToContractInfo[dexId] = {}
+  if (!data.dexIdToChainIdToContractNameToContractInfo[dexId]) {
+    data.dexIdToChainIdToContractNameToContractInfo[dexId] = {}
+  }
 
   fs.readdirSync(smartContractsDeploymentsLocation)
   .forEach(folder => {
