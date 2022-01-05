@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.1
+
+- Fix some dexes contracts names
+
 ## v1.3.0
 
 - Fill-in with empty stablecoins list
